@@ -1,0 +1,57 @@
+#ifndef INCLUDED_COM_SUN_STAR_EMBED_XSTORAGE_HDL
+#define INCLUDED_COM_SUN_STAR_EMBED_XSTORAGE_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/packages/WrongPasswordException.hdl"
+#include "com/sun/star/container/ElementExistException.hdl"
+#include "com/sun/star/embed/StorageWrappedTargetException.hdl"
+#include "com/sun/star/packages/NoEncryptionException.hdl"
+namespace com { namespace sun { namespace star { namespace embed { class XStorage; } } } }
+#include "com/sun/star/uno/RuntimeException.hdl"
+#include "com/sun/star/lang/XComponent.hdl"
+#include "com/sun/star/container/XNameAccess.hdl"
+#include "com/sun/star/container/NoSuchElementException.hdl"
+#include "com/sun/star/embed/InvalidStorageException.hdl"
+#include "com/sun/star/io/IOException.hdl"
+#include "com/sun/star/lang/IllegalArgumentException.hdl"
+namespace com { namespace sun { namespace star { namespace io { class XStream; } } } }
+#include "com/sun/star/uno/Reference.h"
+#include "cppu/macros.hxx"
+#include "rtl/ustring.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace embed {
+
+class SAL_NO_VTABLE XStorage : public ::com::sun::star::container::XNameAccess, public ::com::sun::star::lang::XComponent
+{
+public:
+
+    // Methods
+    virtual void SAL_CALL copyToStorage( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xDest ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > SAL_CALL openStreamElement( const ::rtl::OUString& sStreamName, ::sal_Int32 nOpenMode ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::packages::WrongPasswordException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > SAL_CALL openEncryptedStreamElement( const ::rtl::OUString& sStreamName, ::sal_Int32 nOpenMode, const ::rtl::OUString& sPassword ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::packages::NoEncryptionException, ::com::sun::star::packages::WrongPasswordException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage > SAL_CALL openStorageElement( const ::rtl::OUString& sStorName, ::sal_Int32 nOpenMode ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > SAL_CALL cloneStreamElement( const ::rtl::OUString& sStreamName ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::packages::WrongPasswordException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > SAL_CALL cloneEncryptedStreamElement( const ::rtl::OUString& sStreamName, const ::rtl::OUString& sPassword ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::packages::NoEncryptionException, ::com::sun::star::packages::WrongPasswordException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL copyLastCommitTo( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xTargetStorage ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL copyStorageElementLastCommitTo( const ::rtl::OUString& sStorName, const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xTargetStorage ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isStreamElement( const ::rtl::OUString& sElementName ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::embed::InvalidStorageException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isStorageElement( const ::rtl::OUString& sElementName ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::embed::InvalidStorageException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL removeElement( const ::rtl::OUString& sElementName ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL renameElement( const ::rtl::OUString& sElementName, const ::rtl::OUString& sNewName ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::container::ElementExistException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL copyElementTo( const ::rtl::OUString& sElementName, const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xDest, const ::rtl::OUString& sNewName ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::container::ElementExistException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL moveElementTo( const ::rtl::OUString& sElementName, const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xDest, const ::rtl::OUString& sNewName ) throw (::com::sun::star::embed::InvalidStorageException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::container::ElementExistException, ::com::sun::star::io::IOException, ::com::sun::star::embed::StorageWrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_EMBED_XSTORAGE_HDL

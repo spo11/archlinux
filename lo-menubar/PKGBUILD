@@ -1,0 +1,33 @@
+pkgname=lo-menubar
+pkgbranch=trunk
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Plugin for LibreOffice to export the menus to Appmenu"
+arch=('i686' 'x86_64')
+url="https://launchpad.net/lo-menubar"
+license=('GPL')
+depends=('libreoffice' 'dbus-glib' 'libdbusmenu')
+makedepends=('libreoffice-sdk')
+source=("http://launchpad.net/${pkgname}/${pkgbranch}/${pkgver}/+download/${pkgname}-${pkgver}.tar.bz2"
+        "glib228dep.patch" "dephack.patch")
+md5sums=('2a06c73562c3bc21e2916ae1125a799f'
+         'f09c0ec48ba79f150361bd56a1ec87eb'
+         'eee43dd85aef9fcedf6eb94b7458bad1')
+
+build() {
+cd "${srcdir}/${pkgname}-${pkgver}"
+
+patch -Np0 -i ${srcdir}/glib228dep.patch
+patch -Np0 -i ${srcdir}/dephack.patch
+
+sed -i 's/python/python2/' waf
+    unset CFLAGS
+    unset CXXFLAGS
+LD_LIBRARY_PATH=/usr/lib/libreoffice/ure/lib/ ./waf configure --ure-prefix=/usr/lib/libreoffice/ure/
+./waf build
+}
+
+package() {
+cd "${srcdir}/${pkgname}-${pkgver}"
+./waf --destdir="${pkgdir}" install
+}

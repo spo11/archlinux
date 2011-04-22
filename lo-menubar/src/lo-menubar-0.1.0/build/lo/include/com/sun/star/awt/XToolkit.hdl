@@ -1,0 +1,44 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_XTOOLKIT_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_XTOOLKIT_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/awt/WindowDescriptor.hdl"
+#include "com/sun/star/uno/RuntimeException.hdl"
+namespace com { namespace sun { namespace star { namespace awt { class XWindowPeer; } } } }
+#include "com/sun/star/uno/XInterface.hdl"
+namespace com { namespace sun { namespace star { namespace awt { class XRegion; } } } }
+#include "com/sun/star/lang/IllegalArgumentException.hdl"
+#include "com/sun/star/awt/Rectangle.hdl"
+namespace com { namespace sun { namespace star { namespace awt { class XDevice; } } } }
+#include "com/sun/star/uno/Reference.h"
+#include "com/sun/star/uno/Sequence.h"
+#include "cppu/macros.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+class SAL_NO_VTABLE XToolkit : public ::com::sun::star::uno::XInterface
+{
+public:
+
+    // Methods
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > SAL_CALL getDesktopWindow(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getWorkArea(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > SAL_CALL createWindow( const ::com::sun::star::awt::WindowDescriptor& Descriptor ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > > SAL_CALL createWindows( const ::com::sun::star::uno::Sequence< ::com::sun::star::awt::WindowDescriptor >& Descriptors ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice > SAL_CALL createScreenCompatibleDevice( ::sal_Int32 Width, ::sal_Int32 Height ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion > SAL_CALL createRegion(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_XTOOLKIT_HDL

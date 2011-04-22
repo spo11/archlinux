@@ -1,0 +1,31 @@
+#ifndef INCLUDED_COM_SUN_STAR_FRAME_FRAMEACTION_HDL
+#define INCLUDED_COM_SUN_STAR_FRAME_FRAMEACTION_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace frame {
+
+enum FrameAction
+{
+    FrameAction_COMPONENT_ATTACHED = 0,
+    FrameAction_COMPONENT_DETACHING = 1,
+    FrameAction_COMPONENT_REATTACHED = 2,
+    FrameAction_FRAME_ACTIVATED = 3,
+    FrameAction_FRAME_DEACTIVATING = 4,
+    FrameAction_CONTEXT_CHANGED = 5,
+    FrameAction_FRAME_UI_ACTIVATED = 6,
+    FrameAction_FRAME_UI_DEACTIVATING = 7,
+    FrameAction_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::frame::FrameAction* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_FRAME_FRAMEACTION_HDL

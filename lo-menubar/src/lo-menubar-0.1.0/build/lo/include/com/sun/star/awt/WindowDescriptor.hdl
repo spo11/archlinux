@@ -1,0 +1,49 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_WINDOWDESCRIPTOR_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_WINDOWDESCRIPTOR_HDL
+
+#include "sal/config.h"
+
+namespace com { namespace sun { namespace star { namespace awt { class XWindowPeer; } } } }
+#include "com/sun/star/awt/WindowClass.hdl"
+#include "com/sun/star/awt/Rectangle.hdl"
+#include "com/sun/star/uno/Reference.h"
+#include "cppu/macros.hxx"
+#include "rtl/ustring.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+#ifdef SAL_W32
+#   pragma pack(push, 8)
+#elif defined(SAL_OS2)
+#   pragma pack(8)
+#endif
+
+struct WindowDescriptor {
+    inline WindowDescriptor() SAL_THROW(());
+
+    inline WindowDescriptor(const ::com::sun::star::awt::WindowClass& Type_, const ::rtl::OUString& WindowServiceName_, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& Parent_, const ::sal_Int16& ParentIndex_, const ::com::sun::star::awt::Rectangle& Bounds_, const ::sal_Int32& WindowAttributes_) SAL_THROW(());
+
+    ::com::sun::star::awt::WindowClass Type;
+    ::rtl::OUString WindowServiceName;
+    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > Parent;
+    ::sal_Int16 ParentIndex;
+    ::com::sun::star::awt::Rectangle Bounds;
+    ::sal_Int32 WindowAttributes;
+};
+
+#ifdef SAL_W32
+#   pragma pack(pop)
+#elif defined(SAL_OS2)
+#   pragma pack()
+#endif
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::awt::WindowDescriptor* );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_WINDOWDESCRIPTOR_HDL

@@ -1,0 +1,40 @@
+#ifndef INCLUDED_COM_SUN_STAR_LANG_EVENTOBJECT_HDL
+#define INCLUDED_COM_SUN_STAR_LANG_EVENTOBJECT_HDL
+
+#include "sal/config.h"
+
+namespace com { namespace sun { namespace star { namespace uno { class XInterface; } } } }
+#include "com/sun/star/uno/Reference.h"
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace lang {
+
+#ifdef SAL_W32
+#   pragma pack(push, 8)
+#elif defined(SAL_OS2)
+#   pragma pack(8)
+#endif
+
+struct EventObject {
+    inline EventObject() SAL_THROW(());
+
+    inline EventObject(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Source_) SAL_THROW(());
+
+    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > Source;
+};
+
+#ifdef SAL_W32
+#   pragma pack(pop)
+#elif defined(SAL_OS2)
+#   pragma pack()
+#endif
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::lang::EventObject* );
+
+#endif // INCLUDED_COM_SUN_STAR_LANG_EVENTOBJECT_HDL

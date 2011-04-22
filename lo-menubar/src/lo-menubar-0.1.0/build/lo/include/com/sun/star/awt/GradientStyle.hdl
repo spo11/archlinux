@@ -1,0 +1,29 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_GRADIENTSTYLE_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_GRADIENTSTYLE_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+enum GradientStyle
+{
+    GradientStyle_LINEAR = 0,
+    GradientStyle_AXIAL = 1,
+    GradientStyle_RADIAL = 2,
+    GradientStyle_ELLIPTICAL = 3,
+    GradientStyle_SQUARE = 4,
+    GradientStyle_RECT = 5,
+    GradientStyle_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::awt::GradientStyle* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_GRADIENTSTYLE_HDL

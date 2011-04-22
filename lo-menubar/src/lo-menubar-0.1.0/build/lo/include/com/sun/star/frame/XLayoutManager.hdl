@@ -1,0 +1,71 @@
+#ifndef INCLUDED_COM_SUN_STAR_FRAME_XLAYOUTMANAGER_HDL
+#define INCLUDED_COM_SUN_STAR_FRAME_XLAYOUTMANAGER_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/awt/Point.hdl"
+#include "com/sun/star/ui/DockingArea.hdl"
+#include "com/sun/star/uno/RuntimeException.hdl"
+#include "com/sun/star/uno/XInterface.hdl"
+#include "com/sun/star/awt/Size.hdl"
+namespace com { namespace sun { namespace star { namespace ui { class XDockingAreaAcceptor; } } } }
+namespace com { namespace sun { namespace star { namespace ui { class XUIElement; } } } }
+#include "com/sun/star/awt/Rectangle.hdl"
+namespace com { namespace sun { namespace star { namespace frame { class XFrame; } } } }
+#include "com/sun/star/uno/Reference.h"
+#include "com/sun/star/uno/Sequence.h"
+#include "cppu/macros.hxx"
+#include "rtl/ustring.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace frame {
+
+class SAL_NO_VTABLE XLayoutManager : public ::com::sun::star::uno::XInterface
+{
+public:
+
+    // Methods
+    virtual void SAL_CALL attachFrame( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& Frame ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL reset(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCurrentDockingArea(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XDockingAreaAcceptor > SAL_CALL getDockingAreaAcceptor(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setDockingAreaAcceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XDockingAreaAcceptor >& xDockingAreaAcceptor ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL createElement( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL destroyElement( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL requestElement( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIElement > SAL_CALL getElement( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIElement > > SAL_CALL getElements(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL showElement( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL hideElement( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL dockWindow( const ::rtl::OUString& ResourceURL, ::com::sun::star::ui::DockingArea DockingArea, const ::com::sun::star::awt::Point& Pos ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL dockAllWindows( ::sal_Int16 nElementType ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL floatWindow( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL lockWindow( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL unlockWindow( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setElementSize( const ::rtl::OUString& ResourceURL, const ::com::sun::star::awt::Size& Size ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setElementPos( const ::rtl::OUString& ResourceURL, const ::com::sun::star::awt::Point& Pos ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setElementPosSize( const ::rtl::OUString& ResourceURL, const ::com::sun::star::awt::Point& Pos, const ::com::sun::star::awt::Size& Size ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isElementVisible( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isElementFloating( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isElementDocked( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isElementLocked( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::awt::Size SAL_CALL getElementSize( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::awt::Point SAL_CALL getElementPos( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL lock(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL unlock(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL doLayout(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setVisible( ::sal_Bool Visible ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isVisible(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManager >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_FRAME_XLAYOUTMANAGER_HDL

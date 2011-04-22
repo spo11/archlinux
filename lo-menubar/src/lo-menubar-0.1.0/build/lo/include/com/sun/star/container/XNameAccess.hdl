@@ -1,0 +1,39 @@
+#ifndef INCLUDED_COM_SUN_STAR_CONTAINER_XNAMEACCESS_HDL
+#define INCLUDED_COM_SUN_STAR_CONTAINER_XNAMEACCESS_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/RuntimeException.hdl"
+#include "com/sun/star/container/XElementAccess.hdl"
+#include "com/sun/star/container/NoSuchElementException.hdl"
+#include "com/sun/star/lang/WrappedTargetException.hdl"
+#include "com/sun/star/uno/Any.h"
+#include "com/sun/star/uno/Reference.h"
+#include "com/sun/star/uno/Sequence.h"
+#include "cppu/macros.hxx"
+#include "rtl/ustring.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace container {
+
+class SAL_NO_VTABLE XNameAccess : public ::com::sun::star::container::XElementAccess
+{
+public:
+
+    // Methods
+    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException) = 0;
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_CONTAINER_XNAMEACCESS_HDL

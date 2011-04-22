@@ -1,0 +1,132 @@
+# project lo-menubar (0.1.0) configured on Thu Apr 21 15:33:53 2011 by
+# waf 1.6.2 (abi 98, python 20701f0 on linux2)
+# using ./waf configure --ure-prefix=/usr/lib/libreoffice/ure/
+#
+----------------------------------------
+Setting top to
+/home/aj/packages/lo-menubar/src/lo-menubar-0.1.0
+----------------------------------------
+Setting out to
+/home/aj/packages/lo-menubar/src/lo-menubar-0.1.0/build
+----------------------------------------
+Checking for 'g++' (c++ compiler)
+find program=['g++', 'c++'] paths=['/usr/local/bin', '/usr/bin', '/bin', '/usr/local/sbin', '/usr/sbin', '/sbin', '/opt/java/jre/bin', '/usr/bin/site_perl', '/usr/bin/core_perl', '/opt/qt/bin'] var='CXX' -> '/usr/bin/g++'
+find program=['ar'] paths=['/usr/local/bin', '/usr/bin', '/bin', '/usr/local/sbin', '/usr/sbin', '/sbin', '/opt/java/jre/bin', '/usr/bin/site_perl', '/usr/bin/core_perl', '/opt/qt/bin'] var='AR' -> '/usr/bin/ar'
+ok
+----------------------------------------
+Checking for library uno_sal
+==>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcxx: build/.conf_check_cea1c3740d495ae365309cb9771d8546/test.cpp -> build/.conf_check_cea1c3740d495ae365309cb9771d8546/testbuild/test.cpp.0.o
+[0m
+['/usr/bin/g++', '../test.cpp', '-c', '-o', 'test.cpp.0.o']
+[2/2] [33mcxxprogram: build/.conf_check_cea1c3740d495ae365309cb9771d8546/testbuild/test.cpp.0.o -> build/.conf_check_cea1c3740d495ae365309cb9771d8546/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cpp.0.o', '-o', '/home/aj/packages/lo-menubar/src/lo-menubar-0.1.0/build/.conf_check_cea1c3740d495ae365309cb9771d8546/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/libreoffice/basis3.3/sdk/lib', '-luno_sal', '-Wl,--hash-style=gnu', '-Wl,--as-needed']
+yes
+----------------------------------------
+Checking for library uno_cppu
+==>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcxx: build/.conf_check_07d0536f9461865e3ec87e539050af67/test.cpp -> build/.conf_check_07d0536f9461865e3ec87e539050af67/testbuild/test.cpp.0.o
+[0m
+['/usr/bin/g++', '../test.cpp', '-c', '-o', 'test.cpp.0.o']
+[2/2] [33mcxxprogram: build/.conf_check_07d0536f9461865e3ec87e539050af67/testbuild/test.cpp.0.o -> build/.conf_check_07d0536f9461865e3ec87e539050af67/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cpp.0.o', '-o', '/home/aj/packages/lo-menubar/src/lo-menubar-0.1.0/build/.conf_check_07d0536f9461865e3ec87e539050af67/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/libreoffice/basis3.3/sdk/lib', '-luno_cppu', '-Wl,--hash-style=gnu', '-Wl,--as-needed']
+yes
+----------------------------------------
+Checking for library uno_cppuhelpergcc3
+==>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcxx: build/.conf_check_2afaf478ebff827cea0a1b9b4ab7b5cf/test.cpp -> build/.conf_check_2afaf478ebff827cea0a1b9b4ab7b5cf/testbuild/test.cpp.0.o
+[0m
+['/usr/bin/g++', '../test.cpp', '-c', '-o', 'test.cpp.0.o']
+[2/2] [33mcxxprogram: build/.conf_check_2afaf478ebff827cea0a1b9b4ab7b5cf/testbuild/test.cpp.0.o -> build/.conf_check_2afaf478ebff827cea0a1b9b4ab7b5cf/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cpp.0.o', '-o', '/home/aj/packages/lo-menubar/src/lo-menubar-0.1.0/build/.conf_check_2afaf478ebff827cea0a1b9b4ab7b5cf/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/libreoffice/basis3.3/sdk/lib', '-luno_cppuhelpergcc3', '-Wl,--hash-style=gnu', '-Wl,--as-needed']
+yes
+----------------------------------------
+Checking for program cppumaker
+/usr/lib/libreoffice/basis3.3/sdk/bin/cppumaker
+find program=['cppumaker'] paths=['/usr/lib/libreoffice/basis3.3/sdk/bin'] var='CPPUMAKER' -> '/usr/lib/libreoffice/basis3.3/sdk/bin/cppumaker'
+----------------------------------------
+Checking for program pkg-config
+/usr/bin/pkg-config
+find program=['pkg-config'] paths=['/usr/local/bin', '/usr/bin', '/bin', '/usr/local/sbin', '/usr/sbin', '/sbin', '/opt/java/jre/bin', '/usr/bin/site_perl', '/usr/bin/core_perl', '/opt/qt/bin'] var='PKGCONFIG' -> '/usr/bin/pkg-config'
+----------------------------------------
+Checking for 'gio-2.0' >= 2.26.0
+['/usr/bin/pkg-config', '--atleast-version=2.26.0', 'gio-2.0']
+['/usr/bin/pkg-config', 'gio-2.0', '--cflags', '--libs']
+out: -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -pthread -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0  
+
+yes
+------------------------------------------
+Checking for 'dbusmenu-glib-0.4' >= 0.3.99
+['/usr/bin/pkg-config', '--atleast-version=0.3.99', 'dbusmenu-glib-0.4']
+['/usr/bin/pkg-config', 'dbusmenu-glib-0.4', '--cflags', '--libs']
+out: -I/usr/include/libdbusmenu-0.4  -ldbusmenu-glib  
+
+yes
+------------------------------------------
+Checking for 'dbusmenu-gtk-0.4' >= 0.3.99
+['/usr/bin/pkg-config', '--atleast-version=0.3.99', 'dbusmenu-gtk-0.4']
+['/usr/bin/pkg-config', 'dbusmenu-gtk-0.4', '--cflags', '--libs']
+out: -pthread -I/usr/include/libdbusmenu-0.4 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gtk-2.0 -I/usr/include/libpng14 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2  -pthread -ldbusmenu-gtk -ldbusmenu-glib -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lm -lcairo -lpng14 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0  
+
+yes
+------------------------------------------
+Checking for 'gtk+-2.0' >= 2.22.1
+['/usr/bin/pkg-config', '--atleast-version=2.22.1', 'gtk+-2.0']
+['/usr/bin/pkg-config', 'gtk+-2.0', '--cflags', '--libs']
+out: -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng14  -pthread -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lm -lcairo -lpng14 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0  
+
+yes
+------------------------------------------
+Checking for 'atk' >= 1.32.0
+['/usr/bin/pkg-config', '--atleast-version=1.32.0', 'atk']
+['/usr/bin/pkg-config', 'atk', '--cflags', '--libs']
+out: -pthread -I/usr/include/atk-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -pthread -latk-1.0 -lgobject-2.0 -lgthread-2.0 -lrt -lglib-2.0  
+
+yes
+------------------------------------------
+Checking for 'gdk-pixbuf-2.0' >= 2.22.1
+['/usr/bin/pkg-config', '--atleast-version=2.22.1', 'gdk-pixbuf-2.0']
+['/usr/bin/pkg-config', 'gdk-pixbuf-2.0', '--cflags', '--libs']
+out: -pthread -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng14 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -pthread -lgdk_pixbuf-2.0 -lm -lgobject-2.0 -lgmodule-2.0 -lpng14 -lgthread-2.0 -lrt -lglib-2.0  
+
+yes
+------------------------------------------
+Checking for 'gdk-2.0' >= 2.22.1
+['/usr/bin/pkg-config', '--atleast-version=2.22.1', 'gdk-2.0']
+['/usr/bin/pkg-config', 'gdk-2.0', '--cflags', '--libs']
+out: -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng14  -pthread -lgdk-x11-2.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lm -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lpng14 -lgthread-2.0 -lrt -lglib-2.0  
+
+yes
+------------------------------------------
+Checking for 'x11'
+['/usr/bin/pkg-config', 'x11', '--cflags', '--libs']
+out:  -lX11  
+
+yes
+------------------------------------------
+Checking for 'xproto'
+['/usr/bin/pkg-config', 'xproto', '--cflags', '--libs']
+out:   
+
+yes

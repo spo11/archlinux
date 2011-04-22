@@ -1,0 +1,36 @@
+#ifndef INCLUDED_COM_SUN_STAR_SYSTEM_SYSTEMSHELLEXECUTEEXCEPTION_HDL
+#define INCLUDED_COM_SUN_STAR_SYSTEM_SYSTEMSHELLEXECUTEEXCEPTION_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/Exception.hdl"
+#include "cppu/macros.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace system {
+
+class CPPU_GCC_DLLPUBLIC_EXPORT SystemShellExecuteException : public ::com::sun::star::uno::Exception
+{
+public:
+    inline CPPU_GCC_DLLPRIVATE SystemShellExecuteException() SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE SystemShellExecuteException(const ::rtl::OUString& Message_, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Context_, const ::sal_Int32& PosixError_) SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE SystemShellExecuteException(SystemShellExecuteException const &);
+
+    inline CPPU_GCC_DLLPRIVATE ~SystemShellExecuteException();
+
+    inline CPPU_GCC_DLLPRIVATE SystemShellExecuteException & operator =(SystemShellExecuteException const &);
+
+    ::sal_Int32 PosixError CPPU_GCC3_ALIGN( ::com::sun::star::uno::Exception );
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::system::SystemShellExecuteException* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_SYSTEM_SYSTEMSHELLEXECUTEEXCEPTION_HDL

@@ -1,0 +1,239 @@
+# Romanian translations for PACKAGE package.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Canonical OEM, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: indicator-session\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-30 13:41+0000\n"
+"PO-Revision-Date: 2010-09-30 15:52+0000\n"
+"Last-Translator: Alex Eftimie <alexeftimie@gmail.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-11-11 08:13+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/indicator-session.schemas.in.h:1
+msgid "Makes it so that the logout button doesn't show in the session menu."
+msgstr "Face ca butonul de ieșire să nu mai fie afișat în meniul de sesiune."
+
+#: ../data/indicator-session.schemas.in.h:2
+msgid "Makes it so that the restart button doesn't show in the session menu."
+msgstr ""
+"Face ca butonul de repornire să nu mai fie afișat în meniul de sesiune."
+
+#: ../data/indicator-session.schemas.in.h:3
+msgid ""
+"Makes it so that the shutdown button doesn't show in the session menu."
+msgstr ""
+"Face ca butonul de închidere să nu mai fie afișat în meniul de sesiune."
+
+#: ../data/indicator-session.schemas.in.h:4
+msgid "Remove the Log Out item from the session menu"
+msgstr "Elimină elementul „Ieșire” din meniul de sesiune"
+
+#: ../data/indicator-session.schemas.in.h:5
+msgid "Remove the Restart item from the session menu"
+msgstr "Elimină elementul „Repornire” din meniul de sesiune"
+
+#: ../data/indicator-session.schemas.in.h:6
+msgid "Remove the shutdown item from the session menu"
+msgstr "Elimină elementul „Oprire” din meniul de sesiune"
+
+#: ../data/indicator-session.schemas.in.h:7
+msgid "Suppress the dialog to confirm logout, restart and shutdown action"
+msgstr ""
+"Suprimă dialogul de confirmare pentru acțiunile de ieșire, repornire și "
+"oprire"
+
+#: ../data/indicator-session.schemas.in.h:8
+msgid ""
+"Whether or not to show confirmation dialogs for logout, restart and shutdown "
+"actions."
+msgstr ""
+"Specifică dacă să fie afișat un dialog pentru acțiunile de ieșire, repornire "
+"și oprire."
+
+#: ../src/gconf-helper.c:81 ../src/session-service.c:666
+msgid "Log Out"
+msgstr "Ieșire"
+
+#: ../src/gconf-helper.c:82 ../src/session-service.c:691
+#: ../src/session-service.c:777
+msgid "Restart"
+msgstr "Repornire"
+
+#: ../src/gconf-helper.c:83 ../src/session-service.c:701
+msgid "Shut Down"
+msgstr "Oprire"
+
+#: ../src/gconf-helper.c:85
+msgid "Log Out..."
+msgstr "Ieșire..."
+
+#: ../src/gconf-helper.c:86
+msgid "Restart..."
+msgstr "Repornire..."
+
+#: ../src/gconf-helper.c:87
+msgid "Shut Down..."
+msgstr "Oprire..."
+
+#. LOGOUT_DIALOG_LOGOUT,
+#: ../src/dialog.c:35
+msgctxt "title"
+msgid "Log Out"
+msgstr "Ieșire din cont"
+
+#. LOGOUT_DIALOG_RESTART,
+#: ../src/dialog.c:36
+msgctxt "title"
+msgid "Restart"
+msgstr "Repornire"
+
+#. LOGOUT_DIALOG_SHUTDOWN,
+#: ../src/dialog.c:37
+msgctxt "title"
+msgid "Shut Down"
+msgstr "Oprire"
+
+#. LOGOUT_DIALOG_LOGOUT,
+#: ../src/dialog.c:41
+msgid ""
+"Are you sure you want to close all programs and log out of the computer?"
+msgstr "Sigur doriți să închideți toate programele și să ieșiți din cont?"
+
+#. LOGOUT_DIALOG_RESTART,
+#: ../src/dialog.c:42
+msgid "Are you sure you want to close all programs and restart the computer?"
+msgstr ""
+"Sigur doriți să închideți toate aplicațiile și să reporniți calculatorul?"
+
+#. LOGOUT_DIALOG_SHUTDOWN,
+#: ../src/dialog.c:43
+msgid ""
+"Are you sure you want to close all programs and shut down the computer?"
+msgstr ""
+"Sigur doriți să închideți toate programele și să opriți calculatorul?"
+
+#. LOGOUT_DIALOG_LOGOUT,
+#: ../src/dialog.c:47
+msgctxt "button"
+msgid "Log Out"
+msgstr "Ieșire"
+
+#. LOGOUT_DIALOG_RESTART,
+#: ../src/dialog.c:48
+msgctxt "button"
+msgid "Restart"
+msgstr "Repornire"
+
+#. LOGOUT_DIALOG_SHUTDOWN,
+#: ../src/dialog.c:49
+msgctxt "button"
+msgid "Shut Down"
+msgstr "Oprire"
+
+#. LOGOUT_DIALOG_LOGOUT,
+#: ../src/dialog.c:55
+msgctxt "button auth"
+msgid "Log Out"
+msgstr "Ieșire"
+
+#. LOGOUT_DIALOG_RESTART,
+#: ../src/dialog.c:56
+msgctxt "button auth"
+msgid "Restart..."
+msgstr "Repornire..."
+
+#. LOGOUT_DIALOG_SHUTDOWN,
+#: ../src/dialog.c:57
+msgctxt "button auth"
+msgid "Shut Down..."
+msgstr "Oprire..."
+
+#. TRANSLATORS: This button appears on the logout dialog when
+#. there are updates that require restart.  It will do a restart
+#. in place of a log out.
+#: ../src/dialog.c:63
+msgid "Restart Instead"
+msgstr "Repornește"
+
+#: ../src/dialog.c:64
+msgid "Restart Instead..."
+msgstr "Repornește..."
+
+#: ../src/dialog.c:65
+msgid "Some software updates won't apply until the computer next restarts."
+msgstr ""
+"Unele actualizări nu se vor aplica până la următoarea repornire a "
+"calculatorului."
+
+#: ../src/dialog.c:217 ../src/dialog.c:222
+msgid "Cancel"
+msgstr "Renunță"
+
+#. TRANSLATORS: Translate the '1' below into anything other than
+#. '1' if "Switch From %s..." doesn't make sense in your language.
+#. Instead, the string "Switch User..." will be used.
+#: ../src/indicator-session.c:325
+msgctxt "session_menu:switchfrom"
+msgid "1"
+msgstr "*"
+
+#: ../src/indicator-session.c:334
+msgid "Switch User..."
+msgstr "Schimbare utilizator..."
+
+#. TODO: We need some way to remove the elipsis from appearing
+#. twice in the label.  Not sure how to do that yet.
+#: ../src/indicator-session.c:363
+#, c-format
+msgid "Switch From %s..."
+msgstr "Schimbare de la %s..."
+
+#: ../src/session-service.c:550
+msgid "Lock Screen"
+msgstr "Blocare ecran"
+
+#: ../src/session-service.c:581
+msgid "Guest Session"
+msgstr "Sesiune oaspete"
+
+#: ../src/session-service.c:668
+msgid "Log Out…"
+msgstr "Ieșire..."
+
+#: ../src/session-service.c:676
+msgid "Suspend"
+msgstr "Suspendare"
+
+#: ../src/session-service.c:683
+msgid "Hibernate"
+msgstr "Hibernare"
+
+#: ../src/session-service.c:693 ../src/session-service.c:779
+msgid "Restart…"
+msgstr "Repornire…"
+
+#: ../src/session-service.c:703
+msgid "Shut Down…"
+msgstr "Oprire…"
+
+#: ../src/session-service.c:767
+msgid "Restart to Complete Update"
+msgstr "Repornire pentru completarea actualizării"
+
+#: ../src/session-service.c:769
+msgid "Restart to Complete Update…"
+msgstr "Repornire pentru completarea actualizării..."
+
+#~ msgid "Restart Required"
+#~ msgstr "Este necesară o repornire"
+
+#~ msgid "Restart Required..."
+#~ msgstr "Este necesară o repornire..."

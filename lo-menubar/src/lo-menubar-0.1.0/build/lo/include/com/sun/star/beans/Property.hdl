@@ -1,0 +1,44 @@
+#ifndef INCLUDED_COM_SUN_STAR_BEANS_PROPERTY_HDL
+#define INCLUDED_COM_SUN_STAR_BEANS_PROPERTY_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/Type.h"
+#include "cppu/macros.hxx"
+#include "rtl/ustring.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace beans {
+
+#ifdef SAL_W32
+#   pragma pack(push, 8)
+#elif defined(SAL_OS2)
+#   pragma pack(8)
+#endif
+
+struct Property {
+    inline Property() SAL_THROW(());
+
+    inline Property(const ::rtl::OUString& Name_, const ::sal_Int32& Handle_, const ::com::sun::star::uno::Type& Type_, const ::sal_Int16& Attributes_) SAL_THROW(());
+
+    ::rtl::OUString Name;
+    ::sal_Int32 Handle;
+    ::com::sun::star::uno::Type Type;
+    ::sal_Int16 Attributes;
+};
+
+#ifdef SAL_W32
+#   pragma pack(pop)
+#elif defined(SAL_OS2)
+#   pragma pack()
+#endif
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::beans::Property* );
+
+#endif // INCLUDED_COM_SUN_STAR_BEANS_PROPERTY_HDL

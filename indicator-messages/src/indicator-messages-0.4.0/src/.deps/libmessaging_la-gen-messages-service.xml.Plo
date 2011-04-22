@@ -1,0 +1,1 @@
+libmessaging_la-gen-messages-service.xml.lo: gen-messages-service.xml.c

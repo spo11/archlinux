@@ -1,0 +1,34 @@
+#ifndef INCLUDED_COM_SUN_STAR_BEANS_PROPERTYVETOEXCEPTION_HDL
+#define INCLUDED_COM_SUN_STAR_BEANS_PROPERTYVETOEXCEPTION_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/Exception.hdl"
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace beans {
+
+class CPPU_GCC_DLLPUBLIC_EXPORT PropertyVetoException : public ::com::sun::star::uno::Exception
+{
+public:
+    inline CPPU_GCC_DLLPRIVATE PropertyVetoException() SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE PropertyVetoException(const ::rtl::OUString& Message_, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Context_) SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE PropertyVetoException(PropertyVetoException const &);
+
+    inline CPPU_GCC_DLLPRIVATE ~PropertyVetoException();
+
+    inline CPPU_GCC_DLLPRIVATE PropertyVetoException & operator =(PropertyVetoException const &);
+
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::beans::PropertyVetoException* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_BEANS_PROPERTYVETOEXCEPTION_HDL

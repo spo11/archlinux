@@ -1,0 +1,42 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_XFONT_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_XFONT_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/awt/FontDescriptor.hdl"
+#include "com/sun/star/uno/RuntimeException.hdl"
+#include "com/sun/star/uno/XInterface.hdl"
+#include "com/sun/star/awt/SimpleFontMetric.hdl"
+#include "com/sun/star/uno/Reference.h"
+#include "com/sun/star/uno/Sequence.h"
+#include "cppu/macros.hxx"
+#include "rtl/ustring.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+class SAL_NO_VTABLE XFont : public ::com::sun::star::uno::XInterface
+{
+public:
+
+    // Methods
+    virtual ::com::sun::star::awt::FontDescriptor SAL_CALL getFontDescriptor(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::awt::SimpleFontMetric SAL_CALL getFontMetric(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Int16 SAL_CALL getCharWidth( ::sal_Unicode c ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Sequence< ::sal_Int16 > SAL_CALL getCharWidths( ::sal_Unicode nFirst, ::sal_Unicode nLast ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Int32 SAL_CALL getStringWidth( const ::rtl::OUString& str ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Int32 SAL_CALL getStringWidthArray( const ::rtl::OUString& str, ::com::sun::star::uno::Sequence< ::sal_Int32 >& aDXArray ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL getKernPairs( ::com::sun::star::uno::Sequence< ::sal_Unicode >& Chars1, ::com::sun::star::uno::Sequence< ::sal_Unicode >& Chars2, ::com::sun::star::uno::Sequence< ::sal_Int16 >& Kerns ) throw (::com::sun::star::uno::RuntimeException) = 0;
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_XFONT_HDL

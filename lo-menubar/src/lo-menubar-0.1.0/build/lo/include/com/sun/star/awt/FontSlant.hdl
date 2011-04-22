@@ -1,0 +1,29 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_FONTSLANT_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_FONTSLANT_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+enum FontSlant
+{
+    FontSlant_NONE = 0,
+    FontSlant_OBLIQUE = 1,
+    FontSlant_ITALIC = 2,
+    FontSlant_DONTKNOW = 3,
+    FontSlant_REVERSE_OBLIQUE = 4,
+    FontSlant_REVERSE_ITALIC = 5,
+    FontSlant_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::awt::FontSlant* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_FONTSLANT_HDL

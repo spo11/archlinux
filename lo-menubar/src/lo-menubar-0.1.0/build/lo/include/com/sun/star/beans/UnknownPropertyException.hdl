@@ -1,0 +1,34 @@
+#ifndef INCLUDED_COM_SUN_STAR_BEANS_UNKNOWNPROPERTYEXCEPTION_HDL
+#define INCLUDED_COM_SUN_STAR_BEANS_UNKNOWNPROPERTYEXCEPTION_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/Exception.hdl"
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace beans {
+
+class CPPU_GCC_DLLPUBLIC_EXPORT UnknownPropertyException : public ::com::sun::star::uno::Exception
+{
+public:
+    inline CPPU_GCC_DLLPRIVATE UnknownPropertyException() SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE UnknownPropertyException(const ::rtl::OUString& Message_, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Context_) SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE UnknownPropertyException(UnknownPropertyException const &);
+
+    inline CPPU_GCC_DLLPRIVATE ~UnknownPropertyException();
+
+    inline CPPU_GCC_DLLPRIVATE UnknownPropertyException & operator =(UnknownPropertyException const &);
+
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::beans::UnknownPropertyException* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_BEANS_UNKNOWNPROPERTYEXCEPTION_HDL

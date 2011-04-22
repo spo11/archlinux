@@ -1,0 +1,50 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_GRADIENT_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_GRADIENT_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/awt/GradientStyle.hdl"
+#include "com/sun/star/util/Color.hdl"
+#include "cppu/macros.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+#ifdef SAL_W32
+#   pragma pack(push, 8)
+#elif defined(SAL_OS2)
+#   pragma pack(8)
+#endif
+
+struct Gradient {
+    inline Gradient() SAL_THROW(());
+
+    inline Gradient(const ::com::sun::star::awt::GradientStyle& Style_, const ::sal_Int32& StartColor_, const ::sal_Int32& EndColor_, const ::sal_Int16& Angle_, const ::sal_Int16& Border_, const ::sal_Int16& XOffset_, const ::sal_Int16& YOffset_, const ::sal_Int16& StartIntensity_, const ::sal_Int16& EndIntensity_, const ::sal_Int16& StepCount_) SAL_THROW(());
+
+    ::com::sun::star::awt::GradientStyle Style;
+    ::sal_Int32 StartColor;
+    ::sal_Int32 EndColor;
+    ::sal_Int16 Angle;
+    ::sal_Int16 Border;
+    ::sal_Int16 XOffset;
+    ::sal_Int16 YOffset;
+    ::sal_Int16 StartIntensity;
+    ::sal_Int16 EndIntensity;
+    ::sal_Int16 StepCount;
+};
+
+#ifdef SAL_W32
+#   pragma pack(pop)
+#elif defined(SAL_OS2)
+#   pragma pack()
+#endif
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::awt::Gradient* );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_GRADIENT_HDL

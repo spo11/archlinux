@@ -1,0 +1,34 @@
+#ifndef INCLUDED_COM_SUN_STAR_EMBED_STORAGEWRAPPEDTARGETEXCEPTION_HDL
+#define INCLUDED_COM_SUN_STAR_EMBED_STORAGEWRAPPEDTARGETEXCEPTION_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/lang/WrappedTargetException.hdl"
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace embed {
+
+class CPPU_GCC_DLLPUBLIC_EXPORT StorageWrappedTargetException : public ::com::sun::star::lang::WrappedTargetException
+{
+public:
+    inline CPPU_GCC_DLLPRIVATE StorageWrappedTargetException() SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE StorageWrappedTargetException(const ::rtl::OUString& Message_, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Context_, const ::com::sun::star::uno::Any& TargetException_) SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE StorageWrappedTargetException(StorageWrappedTargetException const &);
+
+    inline CPPU_GCC_DLLPRIVATE ~StorageWrappedTargetException();
+
+    inline CPPU_GCC_DLLPRIVATE StorageWrappedTargetException & operator =(StorageWrappedTargetException const &);
+
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::embed::StorageWrappedTargetException* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_EMBED_STORAGEWRAPPEDTARGETEXCEPTION_HDL

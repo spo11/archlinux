@@ -1,0 +1,36 @@
+#ifndef INCLUDED_COM_SUN_STAR_LANG_ILLEGALARGUMENTEXCEPTION_HDL
+#define INCLUDED_COM_SUN_STAR_LANG_ILLEGALARGUMENTEXCEPTION_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/Exception.hdl"
+#include "cppu/macros.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace lang {
+
+class CPPU_GCC_DLLPUBLIC_EXPORT IllegalArgumentException : public ::com::sun::star::uno::Exception
+{
+public:
+    inline CPPU_GCC_DLLPRIVATE IllegalArgumentException() SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE IllegalArgumentException(const ::rtl::OUString& Message_, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Context_, const ::sal_Int16& ArgumentPosition_) SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE IllegalArgumentException(IllegalArgumentException const &);
+
+    inline CPPU_GCC_DLLPRIVATE ~IllegalArgumentException();
+
+    inline CPPU_GCC_DLLPRIVATE IllegalArgumentException & operator =(IllegalArgumentException const &);
+
+    ::sal_Int16 ArgumentPosition CPPU_GCC3_ALIGN( ::com::sun::star::uno::Exception );
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::lang::IllegalArgumentException* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_LANG_ILLEGALARGUMENTEXCEPTION_HDL

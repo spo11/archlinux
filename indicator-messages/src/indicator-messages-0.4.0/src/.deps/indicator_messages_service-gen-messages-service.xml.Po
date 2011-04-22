@@ -1,0 +1,2 @@
+indicator_messages_service-gen-messages-service.xml.o: \
+ gen-messages-service.xml.c

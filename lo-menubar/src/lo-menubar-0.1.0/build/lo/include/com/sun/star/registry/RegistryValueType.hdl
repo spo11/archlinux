@@ -1,0 +1,31 @@
+#ifndef INCLUDED_COM_SUN_STAR_REGISTRY_REGISTRYVALUETYPE_HDL
+#define INCLUDED_COM_SUN_STAR_REGISTRY_REGISTRYVALUETYPE_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace registry {
+
+enum RegistryValueType
+{
+    RegistryValueType_NOT_DEFINED = 0,
+    RegistryValueType_LONG = 1,
+    RegistryValueType_ASCII = 2,
+    RegistryValueType_STRING = 3,
+    RegistryValueType_BINARY = 4,
+    RegistryValueType_LONGLIST = 5,
+    RegistryValueType_ASCIILIST = 6,
+    RegistryValueType_STRINGLIST = 7,
+    RegistryValueType_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::registry::RegistryValueType* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_REGISTRY_REGISTRYVALUETYPE_HDL

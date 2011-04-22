@@ -1,0 +1,25 @@
+#ifndef INCLUDED_COM_SUN_STAR_REGISTRY_REGISTRYKEYTYPE_HDL
+#define INCLUDED_COM_SUN_STAR_REGISTRY_REGISTRYKEYTYPE_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace registry {
+
+enum RegistryKeyType
+{
+    RegistryKeyType_KEY = 0,
+    RegistryKeyType_LINK = 1,
+    RegistryKeyType_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::registry::RegistryKeyType* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_REGISTRY_REGISTRYKEYTYPE_HDL

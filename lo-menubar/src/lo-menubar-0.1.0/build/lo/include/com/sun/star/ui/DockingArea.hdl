@@ -1,0 +1,28 @@
+#ifndef INCLUDED_COM_SUN_STAR_UI_DOCKINGAREA_HDL
+#define INCLUDED_COM_SUN_STAR_UI_DOCKINGAREA_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace ui {
+
+enum DockingArea
+{
+    DockingArea_DOCKINGAREA_TOP = 0,
+    DockingArea_DOCKINGAREA_BOTTOM = 1,
+    DockingArea_DOCKINGAREA_LEFT = 2,
+    DockingArea_DOCKINGAREA_RIGHT = 3,
+    DockingArea_DOCKINGAREA_DEFAULT = 4,
+    DockingArea_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::ui::DockingArea* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_UI_DOCKINGAREA_HDL

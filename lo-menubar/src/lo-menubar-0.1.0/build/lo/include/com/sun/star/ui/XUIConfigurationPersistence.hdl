@@ -1,0 +1,38 @@
+#ifndef INCLUDED_COM_SUN_STAR_UI_XUICONFIGURATIONPERSISTENCE_HDL
+#define INCLUDED_COM_SUN_STAR_UI_XUICONFIGURATIONPERSISTENCE_HDL
+
+#include "sal/config.h"
+
+namespace com { namespace sun { namespace star { namespace embed { class XStorage; } } } }
+#include "com/sun/star/uno/RuntimeException.hdl"
+#include "com/sun/star/uno/XInterface.hdl"
+#include "com/sun/star/uno/Exception.hdl"
+#include "com/sun/star/uno/Reference.h"
+#include "cppu/macros.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace ui {
+
+class SAL_NO_VTABLE XUIConfigurationPersistence : public ::com::sun::star::uno::XInterface
+{
+public:
+
+    // Methods
+    virtual void SAL_CALL reload(  ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL store(  ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL storeToStorage( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isModified(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isReadOnly(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationPersistence >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_UI_XUICONFIGURATIONPERSISTENCE_HDL

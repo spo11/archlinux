@@ -1,0 +1,1270 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+  <schemalist>
+    <schema>
+		<key>/schemas/apps/indicator-session/suppress_logout_restart_shutdown</key>
+		<applyto>/apps/indicator-session/suppress_logout_restart_shutdown</applyto>
+		<owner>indicator-session</owner>
+		<type>bool</type>
+		<default>FALSE</default>
+		<locale name="C">
+			<short>Suppress the dialog to confirm logout, restart and shutdown action</short>
+			<long>Whether or not to show confirmation dialogs for logout,
+			      restart and shutdown actions.</long>
+		</locale>
+
+		<locale name="am">
+			<short>መጫን ንግግሩን ለማረጋገጥ መውጣቱን ፤ እንደገና መጀመር እና መዝጋት ተግባሩን</short>
+			<long>ቢሆንም ባይሆንም ማሳየት ለማረጋገጥ ንግግሩን ለመውጣት ፤  እንደገና መጀመር እና መዝጋት ተግባሩን</long>
+		</locale>
+
+		<locale name="ar">
+			<short>أخفِ حوار تأكيد الخروج وإعادة التشغيل والإيقاف</short>
+			<long>ما إذا ستظهر حوارات تأكيد الخروج وإعادة التشغيل والإيقاف .</long>
+		</locale>
+
+		<locale name="ast">
+			<short>Suprimir la ventana de confirmación al zarrar sesión, reaniciar y apagar.</short>
+			<long>Si amosar o non los diálogos de confirmación pa zarrar sesión, reaniciar y apagar.</long>
+		</locale>
+
+		<locale name="az">
+			
+			<long>İclas bağlama, yenidən başladma və sistem söndürmə zamanı təsdiq dialoqlarının göstərilib göstərilməməsi</long>
+		</locale>
+
+		<locale name="be">
+			<short>Прабраць дыялог падцьверджаньня выхаду, рэстарту ці выключэньня сыстэмы</short>
+			<long>Ці паказваць дыялогш падцьверджаньня выхаду, рэстарту ці выключэньня сыстэмы</long>
+		</locale>
+
+		<locale name="bg">
+			<short>Да не се показва диалог за потвърждение при излизане, рестартиране и изключване</short>
+			<long>Дали да се показва или не диалог за потвърждение при излизане, рестартиране и изключване</long>
+		</locale>
+
+		<locale name="bn">
+			<short>লগ আউট, পুনরায় আরম্ভ এবং বন্ধ করার সময় নিশ্চিতকরণ ডায়ালগ রোধ</short>
+			<long>লগ আউট, পুনরায় আরম্ভ এবং বন্ধ করার সময় নিশ্চিতকরণ ডায়ালগ প্রদর্শন করা হবে কিনা।</long>
+		</locale>
+
+		<locale name="br">
+			<short>Dilemel ar voestad emziviz da gadarnaat an dilugañ, lazhañ hag adloc&apos;hañ</short>
+			<long>Diskouez pe get ar voestad emziviz da gadarnaat an dilugañ, lazhañ hag adloc&apos;hañ.</long>
+		</locale>
+
+		<locale name="bs">
+			<short>Zaobiđi dijaloški prozor za potvrdu odjave, resetovanja i gašenja računara</short>
+			<long>Da li da prikaže ili ne dijaloge potvrde za akcije odjavljivanja, restartovanja i gašenja.</long>
+		</locale>
+
+		<locale name="ca">
+			<short>Suprimeix el diàleg per a confirmar les accions de sortida, reinici i aturada</short>
+			<long>Si s&apos;han de mostrar diàlegs de confirmació per a les accions de sortida, reinici i aturada.</long>
+		</locale>
+
+		<locale name="crh">
+			<short>Tışarı imzalanuv, kene başlatuv ve qapatuv amellerini tasdiq etüv dialogını bastırıqla</short>
+			<long>Tışarı imzalanuv, kene başlatuv ve qapatuv amelleri içün tasdiq dialoglarınıñ kösterilip kösterilmeycegi.</long>
+		</locale>
+
+		<locale name="cs">
+			<short>Potlačit dialogové okno pro potvrzení odhlášení, restartování a vypnutí</short>
+			<long>Určuje, zda se mají či nemají zobrazovat potvrzující dialogová okna při odhlášení, restartování a vypnutí.</long>
+		</locale>
+
+		<locale name="csb">
+			<short>Przepùszczanié dialogòwegò òkna pòcwierdzenia dzejniô wëlogòwaniô, zrëszaniô znowa ë wéłączaniô</short>
+			<long>Wëskrzënianié abò ni  dialogòwegò òkna pòcwierdzenia dzejniô wëlogòwaniô, zrëszaniô znowa ë wéłączaniô</long>
+		</locale>
+
+		<locale name="da">
+			<short>Vis ikke dialogboksen til bekræftelse af handlingerne logout, genstart og lukning</short>
+			<long>Angiver, om der skal vises bekræftelsesdialogbokse for handlingerne logout, genstart og lukning.</long>
+		</locale>
+
+		<locale name="de">
+			<short>Dialog unterdrücken, der die Aktionen Abmelden, Neustart und Herunterfahren bestätigen lässt.</short>
+			<long>Soll für die Aktionen Abmelden, Neustart und Herunterfahren ein Bestätigungsfenster angezeigt werden?</long>
+		</locale>
+
+		<locale name="el">
+			<short>Απόκρυψη του διαλόγου επιβεβαίωσης για τις ενέργειες αποσύνδεσης, επανεκκίνησης και τερματισμού</short>
+			<long>Αν θα εμφανίζονται ή όχι διάλογοι επιβεβαίωσης για τις ενέργειες αποσύνδεσης, επαννεκίνησης και τερματισμού.</long>
+		</locale>
+
+		<locale name="en_AU">
+			<short>Suppress the dialog to confirm logout, restart and shutdown action</short>
+			<long>Whether or not to show confirmation dialogs for logout, restart and shutdown actions.</long>
+		</locale>
+
+		<locale name="en_CA">
+			<short>Suppress the dialogue to confirm logout, restart and shutdown action</short>
+			<long>Whether or not to show confirmation dialogues for logout, restart and shutdown actions.</long>
+		</locale>
+
+		<locale name="en_GB">
+			<short>Suppress the dialogue to confirm logout, restart and shutdown action</short>
+			<long>Whether or not to show confirmation dialogues for logout, restart and shutdown actions.</long>
+		</locale>
+
+		<locale name="eo">
+			<short>Forstreki la dialogon por konfirmi la elsaluton, restarton kaj elŝalton</short>
+			<long>Montri aŭ ne la dialogojn pri la konfirmo por la elŝalto, restarto aŭ elsaluto</long>
+		</locale>
+
+		<locale name="es">
+			<short>Suprime el diálogo para confirmar la acción de cerrar sesión, reiniciar y apagar</short>
+			<long>Determina si se muestran o no diálogos de confirmación para desconectarse, reiniciar o cerrar.</long>
+		</locale>
+
+		<locale name="et">
+			<short>Taaskäivituse, väljalogimise ja väljalülitamise kinnitusdialoogi ei näidata</short>
+			<long>Kas näidata kinnitusdialoogi taaskäivitusel, väljalogimisel ja väljalülitamisel või mitte.</long>
+		</locale>
+
+		<locale name="eu">
+			<short>Ez konfirmazio-leihorik erakutsi saioa amaitzeko, berrabiarazteko edo itzaltzeko.</short>
+			<long>Konfirmazio-leihorik erakutsiko den saioa amaitzeko, berrabiarazteko edo itzaltzeko.</long>
+		</locale>
+
+		<locale name="fi">
+			<short>Poista uloskirjauksen, uudelleenkäynnistyksen ja sammuttamisen valintaikkuna käytöstä</short>
+			<long>Valitse, näytetäänkö uudelleenkäynnistyksestä, sammuttamisesta ja uloskirjauksesta vahvistus.</long>
+		</locale>
+
+		<locale name="fr">
+			<short>Supprimer la demande de confirmation lors d&apos;une déconnexion, d&apos;un redémarrage ou d&apos;un arrêt</short>
+			<long>Afficher ou non les demandes de confirmation lors d&apos;une déconnexion, d&apos;un redémarrage ou d&apos;un arrêt.</long>
+		</locale>
+
+		<locale name="gl">
+			<short>Suprimir a caixa de diálogo para confirmar que se vai saír da sesión, reiniciar ou apagar</short>
+			<long>Cando mostrar ou non os diálogos de confirmación nas accións de saír da sesión, reiniciar ou apagar.</long>
+		</locale>
+
+		<locale name="he">
+			<short>Suppress the dialog to confirm logout, restart and shutdown action</short>
+			<long>Whether or not to show confirmation dialogs for logout, restart and shutdown actions.</long>
+		</locale>
+
+		<locale name="hi">
+			<short>लॉगआउट, पुनः प्रारंभ और बंद करे क्रिया की पुष्टि वाले संवाद दबाएं</short>
+			<long>लॉगआउट, पुनः प्रारंभ और बंद करे क्रियाओं के लिए पुष्टिकरण संवाद दिखाएं या नहीं.</long>
+		</locale>
+
+		<locale name="hr">
+			<short>Sakrij dijalog za potvrdu odjave, ponovnog pokretanja i isključivanja</short>
+			<long>Treba li prikazati dijalog za potvrdu odjave, ponovnog pokretanja i isključivanja računala.</long>
+		</locale>
+
+		<locale name="hu">
+			<short>Kijelentkezés, újraindítás és leállítás megerősítő párbeszédpaneljének letiltása</short>
+			<long>Megjelenjen párbeszédpanel a kijelentkezés, újraindítás és leállítás megerősítésére?</long>
+		</locale>
+
+		<locale name="id">
+			<short>Tampilkan dialog konfirmasi aksi Keluar, Hidupkan Ulang dan Matikan</short>
+			<long>Tampilkan atau tidak menampilkan dialog konfirmasi aksi Keluar, Hidupkan Ulang dan Matikan.</long>
+		</locale>
+
+		<locale name="is">
+			<short>Ekki láta biðja um staðfestingu þegar notandi skráir sig út, endurræsir tölvuna eða slekkur á henni.</short>
+			<long>Hvort biðja eigi notanda um staðfestingu þegar hann skráir sig út, endurræsir eða slekkur á tölvunni.</long>
+		</locale>
+
+		<locale name="it">
+			<short>Non visualizza i dialoghi di conferma per azioni di fine sessione, riavvio e arresto</short>
+			<long>Indica se mostrare o meno i dialoghi di conferma per le azioni di fine sessione, riavvio e arresto.</long>
+		</locale>
+
+		<locale name="ja">
+			<short>ログアウト、再起動、シャットダウン時に確認ダイアログを表示しない</short>
+			<long>ログアウト、再起動、およびシャットダウン操作の実行時に確認ダイアログを表示するかどうかを指定します。</long>
+		</locale>
+
+		<locale name="kk">
+			<short>Компьютерді сөндіруге немесе қайта жүктеуге жіберген кезде растау диалогын көрсетпеу</short>
+			<long>Компьютерді сөндіруге немесе қайта жүктеуге жіберген кезде растау диалогын көрсету қажет пе?</long>
+		</locale>
+
+		<locale name="ko">
+			<short>로그아웃, 다시 시작, 컴퓨터끄기에 확인 대화창을 만들지 않음</short>
+			<long>로그아웃, 다시 시작, 컴퓨터 끄기 동작에 대한 확인 대화창 표시 여부를 결정합니다.</long>
+		</locale>
+
+		<locale name="ku">
+			<short>Diyaloga ji bo erêkirina derketin, nûdestpêkirin û girtinê nîşan nede</short>
+			<long>Ji bo tevgerên derketin, nûdestpêkirin û girtinê diyaloxa erêkirinê nîşnbide yan na.</long>
+		</locale>
+
+		<locale name="lb">
+			<short>Bestätegungsfënster net uweisen wann de Computer neigestart, ausgemaach an ofgemellt gëtt</short>
+			<long>Bestätegungsfënster weisen wann de Computer neigestart, ausgemaach oder ofgemellt gëtt.</long>
+		</locale>
+
+		<locale name="lt">
+			<short>Nerodyti dialogo lango atsijungimo, paleidimo iš naujo ir išjungimo veiksmams patvirtinti</short>
+			<long>Rodyti ar nerodyti patvirtinimo dialogo langą atsijungimo, paleidimo iš naujo ir išjungimo veiksmams.</long>
+		</locale>
+
+		<locale name="lv">
+			<short>Nerādīt logu, lai apstiprinātu atteikšanos, pārstartēšanu un izslēgšanu</short>
+			<long>Rādīt vai nerādīt apstiprināšanas logus atsakoties, pārstartējot un izslēdzot</long>
+		</locale>
+
+		<locale name="ms">
+			<short>Sorokkan dialog untuk mengesahkan arahan log keluar, ulanghidup dan matikan</short>
+			<long>Sama ada papar atau tidak dialog untuk mengesahkan arahan rekod keluar, mula semula dan matikan</long>
+		</locale>
+
+		<locale name="nb">
+			<short>Overstyr dialogboksen for å bekrefte handlingene logg av, start på nytt og avslutt.</short>
+			<long>Om bekreftelsesdialogbokser for handlingene logg av, start på nytt og avslutt skal vises .</long>
+		</locale>
+
+		<locale name="nl">
+			<short>Verhinderen dat het dialoogvenster een bevestiging voor afmelden, herstarten en afsluiten toont</short>
+			<long>Een bevestiging voor afmelden, herstarten en afsluiten wel of niet weergeven.</long>
+		</locale>
+
+		<locale name="nn">
+			<short>ikkje vis dialogboksen for å logge ut, starte om og slå av.</short>
+			<long>Om dialogboksen for å logge ut, starte om og slå av skal synast eller ikkje.</long>
+		</locale>
+
+		<locale name="oc">
+			<short>Suprimir la bóstia de dialòg de confirmacion per la fin de sesilha, l&apos;atudament e lo reamodament</short>
+			<long>Afichar o pas la bóstia de dialòg de confirmacion per la fin de sesilha, l&apos;atudament e lo reamodament</long>
+		</locale>
+
+		<locale name="pa">
+			<short>ਲਾਗਆਉਟ, ਮੁੜ-ਚਾਲੂ ਕਰਨ ਅਤੇ ਬੰਦ ਕਰਨ ਵਾਸਤੇ ਡਾਈਲਾਗ ਉੱਤੇ ਪੁਸ਼ਟੀ ਕਰੋ</short>
+			<long>ਕੀ ਲਾਗਆਉਟ, ਮੁੜ-ਚਾਲੂ ਤੇ ਬੰਦ ਕਰੋ ਕਾਰਵਾਈ ਲਈ ਪੁਸ਼ਟੀ ਡਾਈਲਾਗ ਵੇਖਣਾ ਹੈ ਜਾਂ ਨਹੀਂ।</long>
+		</locale>
+
+		<locale name="pl">
+			<short>Wstrzymaj okno dialogowe, aby potwierdzić czynności wylogowania się, ponownego uruchomienia i zamknięcia</short>
+			<long>Wyświetlanie okien dialogowych potwierdzenia czynności wylogowania się, ponownego uruchomienia i zamknięcia .</long>
+		</locale>
+
+		<locale name="pt">
+			<short>Suprimir a caixa de diálogo para confirmar acções de terminar sessão, reiniciar e encerrar</short>
+			<long>Mostrar ou não a caixa de diálogo para confirmar acções de terminar sessão, reiniciar e encerrar.</long>
+		</locale>
+
+		<locale name="pt_BR">
+			<short>Não pedir confirmação ao encerrar a sessão, reiniciar ou desligar o computador.</short>
+			<long>Mostrar ou não as janelas de confirmação para as ações de encerrar sessão, reiniciar ou desligar.</long>
+		</locale>
+
+		<locale name="ro">
+			<short>Suprimă dialogul de confirmare pentru acțiunile de ieșire, repornire și oprire</short>
+			<long>Specifică dacă să fie afișat un dialog pentru acțiunile de ieșire, repornire și oprire.</long>
+		</locale>
+
+		<locale name="ru">
+			<short>Не выводить диалог подтверждения выхода, перезапуска и завершения работы</short>
+			<long>Показывать или нет диалоги подтверждения выхода из системы, перезапуска и завершения работы</long>
+		</locale>
+
+		<locale name="si">
+			<short>ඉවත් වීම, නැවත ඇරඹීම හා වසා දැමීම යන ක්‍රියාවන් සඳහා තහවුරු කරගැනීමේ පණිවුඩ වළක්වන්න</short>
+			<long>ඉවත් වීම, නැවත ඇරඹීම හා වසා දැමීම යන ක්‍රියාවන් සඳහා තහවුරු කරගැනීමේ පණිවුඩ පෙන්විය යුතුද හෝ නැතිද වග.</long>
+		</locale>
+
+		<locale name="sk">
+			<short>Zakázať dialógové okno pre potvrdenie odhlásenia, reštartovania a vypnutia</short>
+			<long>Zobraziť alebo nezobraziť potvrdzujúce dialógové okno pri odhlásení, reštartovaní a vypínaní.</long>
+		</locale>
+
+		<locale name="sl">
+			<short>Ne prikazuj pogovornih oken za potrditev odjave, ponovnega zagona in izklopa sistema</short>
+			<long>Vklop in izklop prikaza pogovornih oken za potrditev odjave, ponovnega zagona in izklopa.</long>
+		</locale>
+
+		<locale name="sq">
+			<short>Pezullo dialogun për të konfirmuar veprimet e daljes, rindezjes dhe fikjes</short>
+			<long>Nëse duhen shfaqur apo jo dialogjet e konfirmimit për veprimet e daljes, rindezjes dhe fikjes.</long>
+		</locale>
+
+		<locale name="sr">
+			<short>Спречи дијалог за потврђивање акције одјављивања, рестартовања и гашења</short>
+			<long>Да ли да прикаже или не дијалоге потврде за акције одјављивања, рестартовања и гашења.</long>
+		</locale>
+
+		<locale name="sv">
+			<short>Visa inte dialogrutan för att bekräfta utloggning, omstart och avstängning</short>
+			<long>Bestäm om dialogruta för att bekräfta utloggning, omstart och avstängning ska visas .</long>
+		</locale>
+
+		<locale name="te">
+			<short>లాగౌట్, పునఃప్రారంభ మరియు మూసివేత చర్యలను రూఢీ చేయడానికి డైలాగును కనుమరుగు చేయి</short>
+			<long>లాగౌట్, పునఃప్రారంభ మరియు మూసివేత  చర్యల కొరకు రూఢీ డైలాగులు చూయించాలా వద్దా</long>
+		</locale>
+
+		<locale name="th">
+			<short>ไม่ต้องแสดงกล่องโต้ตอบยืนยันการออกจากระบบ เริ่มเปิดเครื่องใหม่ และปิดเครื่อง</short>
+			<long>ให้แสดงกล่องโต้ตอบหรือไม่ไม่ต้องแสดง เพื่อยืนยันการออกจากระบบ เริ่มเปิดเครื่องใหม่ และปิดเครื่อง</long>
+		</locale>
+
+		<locale name="tr">
+			<short>Oturum kapatma, yeniden başlatma ve sistem kapatma için onay iletişim kutusunu engelleyin</short>
+			<long>Oturum kapama, yeniden başlatma ve sistem kapatma eylemlerinde onay iletişim kutusunu göster veya gösterme.</long>
+		</locale>
+
+		<locale name="ug">
+			<short>تىزىمدىن چىق، قايتا قوزغات ۋە تاقا مەشغۇلاتلارنى جەزمەلەشنى كۆرسىتىدىغان سۆزلەشكۈنى چەكلە</short>
+			<long>تىزىمدىن چىق، قايتا قوزغات ۋە تاقا مەشغۇلاتلارنى جەزملەشنى كۆرسىتىدىغان سۆزلەشكۈنى كۆرسىتەمدۇ يوق.</long>
+		</locale>
+
+		<locale name="uk">
+			<short>Не показувати діалог підтвердження під час завершення сеансу, вимикання та перезавантаження</short>
+			<long>Чи показувати діалог підтвердження під час завершення сеансу, вимикання та перезавантаження.</long>
+		</locale>
+
+		<locale name="vi">
+			<short>Bỏ hộp thoại xác nhận hành động đăng xuất, khởi động lại và tắt máy</short>
+			<long>Hiển thị hay không hộp thoại xác nhận hành động đăng xuất, khởi động lại và tắt máy.</long>
+		</locale>
+
+		<locale name="zh_CN">
+			<short>禁止确认注销、重新启动和关机操作的对话框出现</short>
+			<long>是否显示确认注销、重新启动和关机操作的对话框。</long>
+		</locale>
+
+		<locale name="zh_HK">
+			<short>停止確定登出、重新啟動和關機的對話框</short>
+			<long>是否要顯示確定登出、重新啟動和關機的對話框。</long>
+		</locale>
+
+		<locale name="zh_TW">
+			<short>停用確認登出、重新啟動和關機動作的對話盒</short>
+			<long>是否顯示確認登出、重新啟動和關機動作的對話。</long>
+		</locale>
+    </schema>
+	<schema>
+		<key>/schemas/apps/indicator-session/suppress_logout_menuitem</key>
+		<applyto>/apps/indicator-session/suppress_logout_menuitem</applyto>
+		<owner>indicator-session</owner>
+		<type>bool</type>
+		<default>FALSE</default>
+		<locale name="C">
+			<short>Remove the Log Out item from the session menu</short>
+			<long>Makes it so that the logout button doesn't show in the session menu.</long>
+		</locale>
+
+		<locale name="ar">
+			<short>أزل عنصر الخروج من قائمة الجلسة</short>
+			<long>يجعل زر الخروج لا يظهر في قائمة الجلسة.</long>
+		</locale>
+
+		<locale name="ast">
+			<short>Quitar la opción Zarrar sesión del menú de sesión</short>
+			<long>Fai que&apos;l botón de zarrar sesión nun s&apos;amuese nel menú de sesión.</long>
+		</locale>
+
+		<locale name="be">
+			<short>Выдаліць элемэнт «Выйсьці» з мэню сэансу.</short>
+			<long>Зрабіць каб кнопка выхаду не паказвалася ў мэню сэансу.</long>
+		</locale>
+
+		<locale name="bg">
+			<short>Премахване реда за излизане от системата</short>
+			<long>Прави така, че бутонът за излизане да не се показва в менюто.</long>
+		</locale>
+
+		<locale name="bn">
+			<short>সেশন মেনু থেকে লগ আউট আইটেম অপসারণ</short>
+			<long>সেশন মেনুতে লগ আউট বোতাম প্রদর্শন না করার ব্যবস্থা করে।</long>
+		</locale>
+
+		<locale name="br">
+			<short>Dilemel an ergorenn Digennaskañ diwar lañser an estez</short>
+			<long>Drezi n&apos;e vo ket diskouezet an afell da zigennaskañ war lañser an estez.</long>
+		</locale>
+
+		<locale name="bs">
+			<short>Ukloni stavku Odjavljivanja iz menija sesije</short>
+			<long>Čini da se taster za odjavljivanje ne prikazuje u meniju sesije.</long>
+		</locale>
+
+		<locale name="ca">
+			<short>Oculta l&apos;opció de sortida de la sessió del menú de sessió</short>
+			<long>Oculta l&apos;opció de sortida de la sessió del menú de sessió.</long>
+		</locale>
+
+		<locale name="crh">
+			<short>Tışarı İmzalan unsurını oturım menüsinden çetleştir</short>
+			<long>Oturım menüsindeki tışarı imzalanma dögmesini körünmez yapar.</long>
+		</locale>
+
+		<locale name="cs">
+			<short>Odebrat položku Odhlásit z nabídky sezení</short>
+			<long>Provede se takové nastavení, že tlačítko pro odhlášení nebude zobrazeno v nabídce sezení.</long>
+		</locale>
+
+		<locale name="csb">
+			<short>Rëmôj Wëlogùje z menu sesëji</short>
+			<long>Bez wëskrzënianiô knąpë wëlogòwaniô w menu sesëji.</long>
+		</locale>
+
+		<locale name="da">
+			<short>Fjern Log ud-knappen fra sessionsmenuen</short>
+			<long>Gør så Log ud-knappen ikke findes i sessionsmenuen.</long>
+		</locale>
+
+		<locale name="de">
+			<short>Eintrag zum Abmelden aus dem Sitzungs-Menü entfernen</short>
+			<long>Stellt ein, dass der Menü-Eintrag für die Abmeldung nicht im Sitzungs-Menü angezeigt wird.</long>
+		</locale>
+
+		<locale name="el">
+			<short>Αφαίρεση καταχώρισης αποσύνδεσης από το μενού συνεδρίας</short>
+			<long>Ορίζει να μην εμφανίζεται το κουμπί αποσύνδεσης στο μενού συνεδρίας.</long>
+		</locale>
+
+		<locale name="en_AU">
+			<short>Remove the Log Out item from the session menu</short>
+			<long>Makes it so that the logout button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="en_CA">
+			<short>Remove the Log Out item from the session menu</short>
+			<long>Makes it so that the logout button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="en_GB">
+			<short>Remove the Log Out item from the session menu</short>
+			<long>Makes it so that the logout button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="eo">
+			<short>Forigi la eron &quot;elsaluti&quot; el la menuo.</short>
+			<long>Forigi la elsalutan butonon el la menuo.</long>
+		</locale>
+
+		<locale name="es">
+			<short>Elimina la opción «Cerrar» sesión del menú de sesión</short>
+			<long>Hace que el botón de cerrar sesión no se muestre en el menú de sesión.</long>
+		</locale>
+
+		<locale name="et">
+			<short>Väljalogimise nupu eemaldamine seansi menüüst</short>
+			<long>Väljalogimise nuppu ei näidata seansi menüüs.</long>
+		</locale>
+
+		<locale name="eu">
+			<short>Kendu &apos;Saioa amaitu...&apos; aukera saioaren menutik</short>
+			<long>Markatuta badago, saioaren menuan ez da saioa amaitzeko botoia erakutsiko.</long>
+		</locale>
+
+		<locale name="fi">
+			<short>Poista Kirjaudu ulos -toiminto istuntovalikosta</short>
+			<long>Piilottaa uloskirjatumistoiminnon istuntovalikosta</long>
+		</locale>
+
+		<locale name="fr">
+			<short>Supprimer l&apos;option de fermeture de session du menu</short>
+			<long>Faire en sorte que le bouton de fermeture de session n&apos;apparaisse pas dans le menu.</long>
+		</locale>
+
+		<locale name="gl">
+			<short>Elimina o elemento Sair da sesión do menú de sesión</short>
+			<long>Fai que o botón de sair da sesión non se mostre no meńu de sesión.</long>
+		</locale>
+
+		<locale name="he">
+			<short>Remove the Log Out item from the session menu</short>
+			<long>Makes it so that the logout button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="hi">
+			<short>सत्र सूची से लाँगआउट मद को हटा दें</short>
+			<long>ऐसा करें कि सत्र सूची में लाँगआउट बटन न दिखे.</long>
+		</locale>
+
+		<locale name="hr">
+			<short>Ukloni stavku &quot;Odjava&quot; iz izbornika</short>
+			<long>Skriva tipku odjave iz izbornika</long>
+		</locale>
+
+		<locale name="hu">
+			<short>A Kijelentkezés elem eltávolítása a munkamenet menüből</short>
+			<long>A kijelentkezés gomb ne jelenjen meg a munkamenet menüben.</long>
+		</locale>
+
+		<locale name="id">
+			<short>Menghilangkan opsi Keluar (Log Out) dari menu sesi</short>
+			<long>Membuat tombol keluar (logout) tidak ditampilkan pada menu sesi.</long>
+		</locale>
+
+		<locale name="is">
+			<short>Fjarlægja „Skrá út“ úr valmyndinni</short>
+			<long>Fjarlægja „Skrá út“-takkann svo hann birtist ekki í valmyndinni.</long>
+		</locale>
+
+		<locale name="it">
+			<short>Rimuove la voce &quot;Termina sessione&quot; dal menù</short>
+			<long>Fa in modo che il pulsante per terminare la sessione non venga mostrato nel menù.</long>
+		</locale>
+
+		<locale name="ja">
+			<short>セッションメニューからログアウトの項目を取り除く</short>
+			<long>ログアウトボタンをセッションメニューに表示させないようにします。</long>
+		</locale>
+
+		<locale name="kk">
+			<short>Сеанстар мәзірінен &quot;Сеанстан шығу&quot; жолын алып тастау</short>
+			<long>Сеанстар мәзірінен &quot;Сеанстан шығу&quot; жолын алып тастайтындай әрекеттерді орындайды.</long>
+		</locale>
+
+		<locale name="kn">
+			<short>ಸೆಶನ್ ಮೆನ್ಯುವಿನಿಂದ ಲಾಗ ಔಟ್ ಅನ್ನು ತೆಗೆದು ಹಾಕು</short>
+			
+		</locale>
+
+		<locale name="ko">
+			<short>세션 메뉴에서 로그 아웃 항목 제거</short>
+			<long>이것은 로그아웃 버튼을 세션 메뉴에서 보이지 않게 만들 것 입니다.</long>
+		</locale>
+
+		<locale name="lb">
+			<short>Den Ofmell-Antrag aus dem Sessiouns-Menü eraushuelen</short>
+			<long>Hëllt de Ofmell-Knäppchen aus dem Sessiouns-Menü eraus.</long>
+		</locale>
+
+		<locale name="lt">
+			<short>Pašalinti atsijungimo punktą iš seanso meniu</short>
+			<long>Padaro, kad atsijungimo mygtukas nebūtų rodomas seanso meniu.</long>
+		</locale>
+
+		<locale name="lv">
+			<short>Izņem atteikšanās izvēli no sesijas izvēlnes</short>
+			<long>Nerāda atteikšanās pogu sesijas izvēlnē.</long>
+		</locale>
+
+		<locale name="ms">
+			<short>Hapus item Log Out dari menu sesi.</short>
+			<long>Buat sehingga butang logout tidak muncul di menu sesi.</long>
+		</locale>
+
+		<locale name="nb">
+			<short>Fjern &quot;Logg av&quot;-elementet fra øktmenyen</short>
+			<long>Skjul avloggingsknappen i øktmenyen.</long>
+		</locale>
+
+		<locale name="nl">
+			<short>De knop Afmelden verbergen in het sessiemenu</short>
+			<long>Zorgt ervoor dat de knop om af te melden niet meer wordt weergegeven in het sessiemenu.</long>
+		</locale>
+
+		<locale name="nn">
+			<short>Fjern &quot;Logg ut&quot;-elementet frå øktmenyen</short>
+			<long>Gjer slik at avloggingsknappen ikkje visast i øktmenyen.</long>
+		</locale>
+
+		<locale name="oc">
+			<short>Suprimir la tampadura de sesilha del menut</short>
+			<long>Far en sòrta que lo boton de tampadura de sesilha aparesca pas dins lo menut.</long>
+		</locale>
+
+		<locale name="pa">
+			<short>ਸ਼ੈਸ਼ਨ ਮੇਨੂ ਤੋਂ ਲਾਗ ਆਉਟ ਆਈਟਮ ਹਟਾਓ</short>
+			<long>ਇੰਝ ਬਣਾਇਆ ਹੈ ਤਾਂ ਕਿ ਲਾਗਆਉਟ ਬਟਨ ਸ਼ੈਸ਼ਨ ਮੇਨੂ &apos;ਚ ਵੇਖਾਈ ਨਾ ਦੇਵੇ।</long>
+		</locale>
+
+		<locale name="pl">
+			<short>Usuń pozycję Wyloguj z menu sesji</short>
+			<long>Bez wyświetlania przycisku wylogowania w menu sesji.</long>
+		</locale>
+
+		<locale name="pt">
+			<short>Remover o item &quot;Terminar Sessão&quot; do menu de sessão</short>
+			<long>Fazer com que o botão de &quot;Terminar Sessão&quot; não apareça no menu de sessão.</long>
+		</locale>
+
+		<locale name="pt_BR">
+			<short>Remover o item Encerrar sessão do menu de sessão</short>
+			<long>Faz com que o botão encerrar não apareça no menu.</long>
+		</locale>
+
+		<locale name="ro">
+			<short>Elimină elementul „Ieșire” din meniul de sesiune</short>
+			<long>Face ca butonul de ieșire să nu mai fie afișat în meniul de sesiune.</long>
+		</locale>
+
+		<locale name="ru">
+			<short>Убрать пункт «Завершить сеанс» из меню</short>
+			<long>Скрыть в меню кнопку «Завершить сеанс».</long>
+		</locale>
+
+		<locale name="sk">
+			<short>Odstrániť položku Odhlásiť sa z ponuky relácie.</short>
+			<long>Úprava aby sa tlačidlo odhlásenia nezobrazovalo v ponuke relácie.</long>
+		</locale>
+
+		<locale name="sl">
+			<short>Odstrani gumb za odjavo iz menija seje</short>
+			<long>Ne prikaži gumba za odjavo v meniju seje.</long>
+		</locale>
+
+		<locale name="sq">
+			<short>Hiqe temën e daljes nga menuja e seksionit</short>
+			<long>Bën që butoni i daljes të mos shfaqet në menunë e seksionit.</long>
+		</locale>
+
+		<locale name="sr">
+			<short>Уклони ставку Одјављивања из менија сесије</short>
+			<long>Учини тако да се тастер за одјављивање не приказује у менију сесије.</long>
+		</locale>
+
+		<locale name="sv">
+			<short>Ta bort Logga ut-objektet från sessionsmenyn</short>
+			<long>Gör så att utloggningsknappen inte visas i sessionsmenyn.</long>
+		</locale>
+
+		<locale name="th">
+			<short>ถอนรายการออกจากระบบออกจากเมนูวาระ</short>
+			<long>การกระทำนี้มีผลทำให้ไม่เห็นปุ่มออกจากระบบในเมนูวาระ</long>
+		</locale>
+
+		<locale name="tr">
+			<short>Oturum menüsünden Oturumu Kapat öğesini kaldır</short>
+			<long>Oturumu kapat düğmesinin oturum menüsünde görünmemesini sağlar.</long>
+		</locale>
+
+		<locale name="ug">
+			<short>ئەڭگىمە بۇيرۇق تىزىملىكىدىن تىزىمدىن چىق تۈرىنى چىقىرىۋەت</short>
+			<long>تىزىمدىن چىق توپچىسىنى ئەڭگىمە بۇيرۇق تىزىملىكىدە كۆرسەتمە.</long>
+		</locale>
+
+		<locale name="uk">
+			<short>Прибрати пункт «Завершити сеанс» з меню</short>
+			<long>Вимкнути показ кнопки «Завершити сеанс» в меню.</long>
+		</locale>
+
+		<locale name="vi">
+			<short>Loại bỏ mục Đăng xuất khỏi trình đơn phiên làm việc</short>
+			<long>Làm cho nút Đăng xuất không hiển thị trên trình đơn phiên làm việc</long>
+		</locale>
+
+		<locale name="zh_CN">
+			<short>移除会话菜单中的注销项</short>
+			<long>使注销按钮不在会话菜单中显示。</long>
+		</locale>
+
+		<locale name="zh_HK">
+			<short>從作業階段選單中移除「登出」項目</short>
+			<long>也讓登出按鈕不要在作業階段選單內顯示。</long>
+		</locale>
+
+		<locale name="zh_TW">
+			<short>從作業階段選單中移除「登出」項目</short>
+			<long>讓登出按鈕不要在作業階段選單內顯示。</long>
+		</locale>
+	</schema>
+	<schema>
+		<key>/schemas/apps/indicator-session/suppress_restart_menuitem</key>
+		<applyto>/apps/indicator-session/suppress_restart_menuitem</applyto>
+		<owner>indicator-session</owner>
+		<type>bool</type>
+		<default>FALSE</default>
+		<locale name="C">
+			<short>Remove the Restart item from the session menu</short>
+			<long>Makes it so that the restart button doesn't show in the session menu.</long>
+		</locale>
+
+		<locale name="ar">
+			<short>أزل عنصر إعادة التشغيل من قائمة الجلسة</short>
+			<long>يجعل زر إعادة التشغيل لا يظهر في قائمة الجلسة.</long>
+		</locale>
+
+		<locale name="ast">
+			<short>Desanicia la opción «Reaniciar» del menú de sesión</short>
+			<long>Fai que&apos;l botón de reaniciu nun s&apos;amuese nel menú de sesión.</long>
+		</locale>
+
+		<locale name="bg">
+			<short>Премахване реда за рестартиране от менюто</short>
+			<long>Прави така, че бутонът за рестартиране да не се показва в менюто.</long>
+		</locale>
+
+		<locale name="bs">
+			<short>Ukloni stavku Restartovanja iz menija sesije</short>
+			<long>Čini da se dugme za restartovanja ne prikazuje u meniju sesije</long>
+		</locale>
+
+		<locale name="ca">
+			<short>Suprimeix l&apos;element de reinici del menú de la sessió</short>
+			<long>Fes que el botó de reinici no es mostri al menú de la sessió.</long>
+		</locale>
+
+		<locale name="crh">
+			<short>Kene Başlat unsurını oturım menüsinden çetleştir</short>
+			<long>Oturım menüsindeki kene başlatma dögmesini körünmez yapar.</long>
+		</locale>
+
+		<locale name="cs">
+			<short>Odstranit položku Restartovat z nabídky sezení</short>
+			<long>Provede se takové nastavení, že tlačítko pro restart nebude zobrazeno v nabídce sezení.</long>
+		</locale>
+
+		<locale name="csb">
+			<short>Rëmôj Zrëszë znowa z menu sesëji</short>
+			<long>Bez wëskrzënianiô knąpë zrëszaniô znowa w menu sesëji.</long>
+		</locale>
+
+		<locale name="da">
+			<short>Fjern Genstart-knappen fra sessionsmenuen</short>
+			<long>Gør så Genstart-knappen ikke findes i sessionsmenuen.</long>
+		</locale>
+
+		<locale name="de">
+			<short>Entfernt den Eintrag zum Neu starten aus dem Sitzungs-Menü.</short>
+			<long>Stellt ein, dass der Menü-Eintrag zum Neu starten des Systems nicht im Sitzungs-Menü angezeigt wird.</long>
+		</locale>
+
+		<locale name="el">
+			<short>Αφαίρεση της επανεκκίνησης από το μενού συνεδρίας</short>
+			<long>Δεν θα εμφανίζεται το κουμπί επανεκκίνησης στο μενού συνεδρίας</long>
+		</locale>
+
+		<locale name="en_AU">
+			<short>Remove the Restart item from the session menu</short>
+			<long>Makes it so that the restart button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="en_CA">
+			<short>Remove the Restart item from the session menu</short>
+			<long>Makes it so that the restart button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="en_GB">
+			<short>Remove the Restart item from the session menu</short>
+			<long>Makes it so that the restart button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="eo">
+			<short>Forigi la eron Relanĉi el la seancomenuo</short>
+			<long>Ne montri la relanĉbutonon en la seancomenuo</long>
+		</locale>
+
+		<locale name="es">
+			<short>Elimina la opción «Reiniciar» del menú de sesión</short>
+			<long>Hace que el botón de reinicio no se muestre en el menú de sesión.</long>
+		</locale>
+
+		<locale name="et">
+			<short>Taaskäivituse nupu eemaldamine sessiooni menüüst</short>
+			<long>Taaskäivituse nuppu ei näidata seansi menüüs.</long>
+		</locale>
+
+		<locale name="eu">
+			<short>Kendu &apos;Berrabiarazi...&apos; aukera saioaren menutik</short>
+			<long>Markatuta badago, saioaren menuan ez da berrabiarazteko botoia erakutsiko.</long>
+		</locale>
+
+		<locale name="fi">
+			<short>Poista käynnistä uudelleen -toiminto istuntovalikosta</short>
+			<long>Piilottaa uudelleenkäynnistysvalinnan istuntovalikosta.</long>
+		</locale>
+
+		<locale name="fr">
+			<short>Supprime l&apos;option de redémarrage du menu</short>
+			<long>Fait en sorte que le bouton de redémarrage n&apos;apparaisse pas dans le menu.</long>
+		</locale>
+
+		<locale name="gl">
+			<short>Eliminar o elemento Reiniciar do menú de sesión</short>
+			<long>Fai que o botón de reiniciar non se mostre no menú de sesión.</long>
+		</locale>
+
+		<locale name="he">
+			<short>Remove the Restart item from the session menu</short>
+			<long>Makes it so that the restart button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="hi">
+			<short>सत्र सूची से पुनःआरंभ मद को हटा दें</short>
+			<long>ऐसा करें कि सत्र सूची में पुनःआरंभ बटन न दिखे.</long>
+		</locale>
+
+		<locale name="hr">
+			<short>Ukloni tipku za ponovo pokretanje iz izbornika prijave</short>
+			<long>Rezultira time da se tipka za ponovo pokretanje ne prikazuje u izborniku prijave.</long>
+		</locale>
+
+		<locale name="hu">
+			<short>Az újraindítás elem eltávolítása a munkamenetmenüből</short>
+			<long>Az újraindítás gomb nem jelenik meg a munkamenetmenüben.</long>
+		</locale>
+
+		<locale name="id">
+			<short>Menghilangkan opsi Hidupkan Ulang (Restart) dari menu sesi</short>
+			<long>Membuat tombol untuk menyalakan ulang komputer (restart) tidak ditampilkan pada menu sesi.</long>
+		</locale>
+
+		<locale name="is">
+			<short>Fjarlægja „Endurræsa“ úr valmyndinni</short>
+			<long>Fjarlægja „Endurræsa“-takkann svo hann birtist ekki í valmyndinni.</long>
+		</locale>
+
+		<locale name="it">
+			<short>Rimuove l&apos;oggetto &quot;Riavvia&quot; dal menù della sessione</short>
+			<long>Fa in modo che il pulsante per riavviare il computer non compaia nel menù della sessione.</long>
+		</locale>
+
+		<locale name="ja">
+			<short>セッションメニューから「再起動」を削除</short>
+			<long>セッションメニューに再起動ボタンを表示させないようにします。</long>
+		</locale>
+
+		<locale name="kk">
+			<short>Сеанстар мәзірінен &quot;Қайта жүктеу&quot; жолын алып тастау</short>
+			<long>Сеанстар мәзірінен &quot;Қайта жүктеу&quot; жолын алып тастайтындай әрекеттерді орындайды.</long>
+		</locale>
+
+		<locale name="ko">
+			<short>세션 메뉴에서 다시 시작 항목 제거</short>
+			<long>세션 메뉴에서 다시 시작 버튼이 보이지 않게 합니다.</long>
+		</locale>
+
+		<locale name="lb">
+			<short>D&apos;Neistart-Element aus dem Sessiouns-Menü eraushuelen</short>
+			<long>Mécht dass den Neistart-Knäppchen net am Sessiouns-Menü opdaucht</long>
+		</locale>
+
+		<locale name="lt">
+			<short>Pašalinti paleidimo iš naujo įrašą iš seanso meniu</short>
+			<long>Padaro, kad nesimatytų paleidimo iš naujo mygtuko seanso meniu.</long>
+		</locale>
+
+		<locale name="lv">
+			<short>Izņem pārstartēšanas izvēli no sesijas izvēlnes</short>
+			<long>Izņem pārstartēšanas pogu no sesijas izvēlnes.</long>
+		</locale>
+
+		<locale name="ms">
+			<short>Buang item Mula Semula daripada menu sesi</short>
+			<long>Jadikannya supaya butang mula semula tidak dipaparkan didalam menu sesi.</long>
+		</locale>
+
+		<locale name="nb">
+			<short>Fjern omstartelementet fra øktmenyen.</short>
+			<long>Skjul omstartknappen i øktmenyen.</long>
+		</locale>
+
+		<locale name="nl">
+			<short>De knop Herstarten verbergen in het sessiemenu</short>
+			<long>Zorgt ervoor dat de knop om te herstarten niet meer wordt weergegeven in het sessiemenu.</long>
+		</locale>
+
+		<locale name="nn">
+			<short>Fjern omstartselementet frå øktmenyen.</short>
+			<long>Gjer slik at omstart-knappen ikkje visast i øktmenyen.</long>
+		</locale>
+
+		<locale name="oc">
+			<short>Suprimís l&apos;opcion de reaviada del menut</short>
+			<long>Fa en sòrta que lo boton de reaviada aparesca pas dins lo menut.</long>
+		</locale>
+
+		<locale name="pa">
+			<short>ਸ਼ੈਸ਼ਨ ਮੇਨੂ ਤੋਂ ਮੁੜ-ਚਾਲੂ ਕਰੋ ਆਈਟਮ ਹਟਾਓ</short>
+			<long>ਇੰਝ ਬਣਾਇਆ ਗਿਆ ਹੈ ਤਾਂ ਕਿ ਮੁੜ-ਚਾਲੂ ਬਟਨ ਸ਼ੈਸ਼ਨ ਮੇਨੂ &apos;ਚ ਵੇਖਾਈ ਨਾ ਦੇਵੇ।</long>
+		</locale>
+
+		<locale name="pl">
+			<short>Usuwa element ponownego uruchamiania z menu sesji</short>
+			<long>Sprawia, że przycisk ponownego uruchamiania nie wyświetla się w menu sesji.</long>
+		</locale>
+
+		<locale name="pt">
+			<short>Remover a opção Reiniciar do menu de sessão</short>
+			<long>Faz com que o botão de reiniciar não seja mostrado no menu de sessão.</long>
+		</locale>
+
+		<locale name="pt_BR">
+			<short>Remover o item Reiniciar do menu de sessão</short>
+			<long>Faz com que o botão reiniciar não seja mostrado no menu de sessão.</long>
+		</locale>
+
+		<locale name="ro">
+			<short>Elimină elementul „Repornire” din meniul de sesiune</short>
+			<long>Face ca butonul de repornire să nu mai fie afișat în meniul de sesiune.</long>
+		</locale>
+
+		<locale name="ru">
+			<short>Удалить пункт &quot;Перезагрузка&quot; из меню</short>
+			<long>Скрыть в меню кнопку «Перезугрузка».</long>
+		</locale>
+
+		<locale name="sk">
+			<short>Odstrániť položku Reštartovať z ponuky relácie.</short>
+			<long>Úprava aby sa tlačidlo reštart nezobrazovalo v ponuke relácie.</long>
+		</locale>
+
+		<locale name="sl">
+			<short>Odstrani gumb za ponovni zagon iz menija seje</short>
+			<long>Gumba za ponoven zagon ne prikaže v meniju seje.</long>
+		</locale>
+
+		<locale name="sq">
+			<short>Hiqe temën e rindezjes nga menuja e seksionit</short>
+			<long>Bëj që butoni i rindezjes të mos shfaqet në menunë e seksionit.</long>
+		</locale>
+
+		<locale name="sr">
+			<short>Уклони ставку Рестартовања из менија сесије</short>
+			<long>Уклони ставку Рестартовања из менија сесије</long>
+		</locale>
+
+		<locale name="sv">
+			<short>Ta bort objektet Starta om från sessionsmenyn</short>
+			<long>Gör så att omstartsknappen inte visas i sessionsmenyn.</long>
+		</locale>
+
+		<locale name="th">
+			<short>ถอนรายการเริ่มเปิดเครื่องใหม่ออกจากเมนูวาระ</short>
+			<long>การกระทำนี้มีผลทำให้ไม่เห็นปุ่มเริ่มเปิดเครื่องใหม่ในเมนูวาระ</long>
+		</locale>
+
+		<locale name="tr">
+			<short>Yeniden Başlat öğesini oturum menüsünden kaldır</short>
+			<long>Yeniden Başlat düğmesinin oturum menüsünde görünmemesini sağlar.</long>
+		</locale>
+
+		<locale name="ug">
+			<short>session بۇيرۇق تىزىملىكىدىن قايتا قوزغاش دېگەن تۈرىنى ئۆچۈرۈش</short>
+			<long>قايتا قوزغىتىش توپچىسىنى session بۇيرۇق تىزىملىكىدە كۆرسەتمەيدىغان قىلىش</long>
+		</locale>
+
+		<locale name="uk">
+			<short>Прибрати пункт «Перезавантаження» з меню</short>
+			<long>Вимкнути показ кнопки «Перезавантаження» в меню.</long>
+		</locale>
+
+		<locale name="vi">
+			<short>Gỡ mục Khởi động lại khỏi trình đơn phiên làm việc</short>
+			<long>Làm cho nút Khởi động lại không hiển thị trên trình đơn phiên làm việc</long>
+		</locale>
+
+		<locale name="zh_CN">
+			<short>移除会话菜单中的重启项</short>
+			<long>使重启按钮不在会话菜单中显示。</long>
+		</locale>
+
+		<locale name="zh_HK">
+			<short>從工作階段選單中移除「重新啟動」項目</short>
+			<long>讓重新啟動按鈕不要顯在示作業階段選單內。</long>
+		</locale>
+
+		<locale name="zh_TW">
+			<short>從工作階段選單中移除「重新啟動」項目</short>
+			<long>讓重新啟動按鈕不要顯在示作業階段選單內。</long>
+		</locale>
+	</schema>
+	<schema>
+		<key>/schemas/apps/indicator-session/suppress_shutdown_menuitem</key>
+		<applyto>/apps/indicator-session/suppress_shutdown_menuitem</applyto>
+		<owner>indicator-session</owner>
+		<type>bool</type>
+		<default>FALSE</default>
+		<locale name="C">
+			<short>Remove the shutdown item from the session menu</short>
+			<long>Makes it so that the shutdown button doesn't show in the session menu.</long>
+		</locale>
+
+		<locale name="ar">
+			<short>أزل عنصر الإطفاء من قائمة الجلسة</short>
+			<long>يجعل زر الإطفاء لا يظهر في قائمة الجلسة.</long>
+		</locale>
+
+		<locale name="ast">
+			<short>Desanicia la opción «Apagar» del menú de sesión</short>
+			<long>Fai que&apos;l botón d&apos;apagar nun s&apos;amuese nel menú de sesión.</long>
+		</locale>
+
+		<locale name="bg">
+			<short>Премахване реда за изключване от менюто</short>
+			<long>Прави така, че бутонът за изключване да не се показва в менюто.</long>
+		</locale>
+
+		<locale name="bs">
+			<short>Ukloni stavku Gašenja iz menija sesije</short>
+			<long>Čini da se dugme za gašenje ne prikazuje u meniju sesije</long>
+		</locale>
+
+		<locale name="ca">
+			<short>Suprimeix l&apos;element d&apos;aturada del menú de la sessió</short>
+			<long>Fes que el botó d&apos;aturada no es mostri al menú de la sessió.</long>
+		</locale>
+
+		<locale name="crh">
+			<short>Qapat unsurını oturım menüsinden çetleştir</short>
+			<long>Oturım menüsindeki qapatma dögmesini körünmez yapar.</long>
+		</locale>
+
+		<locale name="cs">
+			<short>Odstranit položku Vypnout z nabídky sezení</short>
+			<long>Provede se takové nastavení, že tlačítko pro vypnutí nebude zobrazeno v nabídce sezení.</long>
+		</locale>
+
+		<locale name="csb">
+			<short>Rëmôj Wëłączë z menu sesëji</short>
+			<long>Bez wëskrzënianiô knąpë wëłączaniô w menu sesëji.</long>
+		</locale>
+
+		<locale name="da">
+			<short>Fjern Luk ned-knappen fra sessionsmenuen</short>
+			<long>Gør så Luk ned-knappen ikke findes i sessionsmenuen.</long>
+		</locale>
+
+		<locale name="de">
+			<short>Entfernt den Eintrag zum Herunterfahren aus dem Sitzungs-Menü.</short>
+			<long>Stellt ein, dass der Menü-Eintrag zum Herunterfahren des Systems nicht im Sitzungs-Menü angezeigt wird.</long>
+		</locale>
+
+		<locale name="el">
+			<short>Αφαίρεση του τερματισμού από το μενού συνεδρίας</short>
+			<long>Δεν θα εμφανίζεται το κουμπί τερματισμού στο μενού συνεδρίας</long>
+		</locale>
+
+		<locale name="en_AU">
+			<short>Remove the shutdown item from the session menu</short>
+			<long>Makes it so that the shutdown button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="en_CA">
+			<short>Remove the shutdown item from the session menu</short>
+			<long>Makes it so that the shutdown button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="en_GB">
+			<short>Remove the Shut Down item from the session menu</short>
+			<long>Makes it so that the shut down button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="eo">
+			<short>Forigi la eron Elŝalti el la seancomenuo</short>
+			<long>Ne montri la elŝaltbutonon en la seancomenuo</long>
+		</locale>
+
+		<locale name="es">
+			<short>Elimina la opción «Apagar» del menú de sesión</short>
+			<long>Hace que el botón de apagar no se muestre en el menú de sesión.</long>
+		</locale>
+
+		<locale name="et">
+			<short>Väljalülitamise nupu eemaldamine sessiooni menüüst</short>
+			<long>Väljalülitamise nuppu ei näidata seansi menüüs.</long>
+		</locale>
+
+		<locale name="eu">
+			<short>Kendu &apos;Itzali...&apos; aukera saioaren menutik</short>
+			<long>Markatuta badago, saioaren menuan ez da sistema itzaltzeko botoia erakutsiko.</long>
+		</locale>
+
+		<locale name="fi">
+			<short>Poista sammuta-toiminto istuntovalikosta</short>
+			<long>Piilottaa sammutusvalinnan istuntovalikosta.</long>
+		</locale>
+
+		<locale name="fr">
+			<short>Supprime l&apos;option d&apos;arrêt du menu</short>
+			<long>Fait en sorte que le bouton d&apos;arrêt n&apos;apparaisse pas dans le menu.</long>
+		</locale>
+
+		<locale name="gl">
+			<short>Eliminar o elemento Apagar do menú de sesión</short>
+			<long>Fai que o menú de apagar non se mostre no menú de sesión.</long>
+		</locale>
+
+		<locale name="he">
+			<short>Remove the shutdown item from the session menu</short>
+			<long>Makes it so that the shutdown button doesn&apos;t show in the session menu.</long>
+		</locale>
+
+		<locale name="hi">
+			<short>सत्र सूची से बंद करे मद को हटा दें</short>
+			<long>ऐसा करें कि सत्र सूची में बंद करे बटन न दिखे.</long>
+		</locale>
+
+		<locale name="hr">
+			<short>Ukloni tipku za isključivanje iz izbornika prijave</short>
+			<long>Rezultira time da se tipka za gašenje ne prikazuje u izborniku prijave.</long>
+		</locale>
+
+		<locale name="hu">
+			<short>A leállítás elem eltávolítása a munkamenetmenüből</short>
+			<long>A leállítás gomb nem jelenik meg a munkamenetmenüben.</long>
+		</locale>
+
+		<locale name="id">
+			<short>Menghilangkan opsi mematikan komputer (shutdown) dari menu sesi</short>
+			<long>Membuat tombol untuk mematikan komputer (shutdown) tidak ditampilkan pada menu sesi.</long>
+		</locale>
+
+		<locale name="is">
+			<short>Fjarlægja „Slökkva á tölvunni“ úr valmyndinni</short>
+			<long>Fjarlægja „Slökkva á tölvunni“-takkann svo hann birtist ekki í valmyndinni.</long>
+		</locale>
+
+		<locale name="it">
+			<short>Rimuove l&apos;oggetto &quot;Arresta&quot; dal menù della sessione</short>
+			<long>Fa in modo che il pulsante per arrestare il computer non compaia nel menù della sessione.</long>
+		</locale>
+
+		<locale name="ja">
+			<short>セッションメニューからシャットダウンを削除</short>
+			<long>セッションメニューにシャットダウンボタンを表示させないようにします。</long>
+		</locale>
+
+		<locale name="kk">
+			<short>Сеанстар мәзірінен &quot;Сөндіру&quot; жолын алып тастау</short>
+			<long>Сеанстар мәзірінен &quot;Сөндіру&quot; жолын алып тастайтындай әрекеттерді орындайды.</long>
+		</locale>
+
+		<locale name="ko">
+			<short>세션 메뉴에서 컴퓨터 끄기 항목 제거</short>
+			<long>세션 메뉴에서 컴퓨터 끄기 버튼이 보이지 않게 합니다.</long>
+		</locale>
+
+		<locale name="lb">
+			<short>D&apos;Ausmaach-Element aus dem Sessiouns-Menü eraushuelen</short>
+			<long>Mécht dass den Ausmaach-Knäppchen net am Sessiouns-Menü opdaucht</long>
+		</locale>
+
+		<locale name="lt">
+			<short>Pašalinti išjungimo įrašą iš seanso meniu</short>
+			<long>Padaro, kad nesimatytų išjungimo mygtuko seanso meniu.</long>
+		</locale>
+
+		<locale name="lv">
+			<short>Izņem izslēgšanas izvēli no sesijas izvēlnes</short>
+			<long>Izņem izslēgšanas pogu no sesijas izvēlnes.</long>
+		</locale>
+
+		<locale name="ms">
+			<short>Buang item matikan daripada menu sesi</short>
+			<long>Jadikannya supaya butang matikan tidak dipaparkan didalam menu sesi.</long>
+		</locale>
+
+		<locale name="nb">
+			<short>Fjern omstartknappen fra øktmenyen.</short>
+			<long>Skjul slå av-knappen i øktmenyen.</long>
+		</locale>
+
+		<locale name="nl">
+			<short>De knop Afsluiten verbergen in het sessiemenu</short>
+			<long>Zorgt ervoor dat de knop om af te sluiten niet meer wordt weergegeven in het sessiemenu.</long>
+		</locale>
+
+		<locale name="nn">
+			<short>Fjern avslutningselementet frå øktmenyen</short>
+			<long>Gjer slik at avslutt-knappen ikkje visast i øktmenyen.</long>
+		</locale>
+
+		<locale name="oc">
+			<short>Suprimís l&apos;opcion d&apos;arrèst del menut</short>
+			<long>Fa en sòrta que lo boton d&apos;arrèst aparesca pas dins lo menut.</long>
+		</locale>
+
+		<locale name="pa">
+			<short>ਸ਼ੈਸ਼ਨ ਮੇਨੂ ਤੋਂ ਬੰਦ ਕਰੋ ਆਈਟਮ ਹਟਾਓ</short>
+			<long>ਇੰਝ ਬਣਾਇਆ ਗਿਆ ਹੈ ਤਾਂ ਕਿ ਬੰਦ ਕਰੋ ਬਟਨ ਸ਼ੈਸ਼ਨ ਮੇਨੂ &apos;ਚ ਵੇਖਾਈ ਨਾ ਦੇਵੇ।</long>
+		</locale>
+
+		<locale name="pl">
+			<short>Usuwa element wyłączenia komputera z menu sesji</short>
+			<long>Sprawia, że przycisk wyłączenia komputera nie wyświetla się w menu sesji.</long>
+		</locale>
+
+		<locale name="pt">
+			<short>Remover a opção Encerrar do menu de sessão</short>
+			<long>Faz com que o botão de encerrar não seja mostrado no menu de sessão.</long>
+		</locale>
+
+		<locale name="pt_BR">
+			<short>Remover o item Desligar do menu de sessão</short>
+			<long>Faz com que o botão desligar não seja mostrado no menu de sessão.</long>
+		</locale>
+
+		<locale name="ro">
+			<short>Elimină elementul „Oprire” din meniul de sesiune</short>
+			<long>Face ca butonul de închidere să nu mai fie afișat în meniul de sesiune.</long>
+		</locale>
+
+		<locale name="ru">
+			<short>Удалить пункт &quot;Выключение компьютера&quot; из меню</short>
+			<long>Скрыть в меню кнопку «Выключить компьютер».</long>
+		</locale>
+
+		<locale name="sk">
+			<short>Odstrániť položku Vypnúť z ponuky relácie.</short>
+			<long>Úprava aby sa tlačidlo na vypnutia nezobrazovalo v ponuke relácie.</long>
+		</locale>
+
+		<locale name="sl">
+			<short>Odstrani gumb za izklop iz menija seje</short>
+			<long>Gumba za izklop ne pokaže v meniju seje.</long>
+		</locale>
+
+		<locale name="sq">
+			<short>Hiqe temën e fikjes nga menuja e seksionit</short>
+			<long>Bëj që butoni i fikjes të mos shfaqet në menunë e seksionit.</long>
+		</locale>
+
+		<locale name="sr">
+			<short>Уклони ставку Гашења из менија сесије</short>
+			<long>Уклони ставку Гашења из менија сесије</long>
+		</locale>
+
+		<locale name="sv">
+			<short>Ta bort avstängningsobjektet från sessionsmenyn</short>
+			<long>Gör så att avstängningsknappen inte visas i sessionsmenyn.</long>
+		</locale>
+
+		<locale name="th">
+			<short>ถอนรายการปิดเครื่องออกจากเมนูวาระ</short>
+			<long>การกระทำนี้มีผลทำให้ไม่เห็นปุ่มปิดเครื่องในเมนูวาระ</long>
+		</locale>
+
+		<locale name="tr">
+			<short>Kapat öğesini oturum menüsünden kaldır</short>
+			<long>Kapat düğmesinin oturum menüsünde görünmemesini sağlar.</long>
+		</locale>
+
+		<locale name="ug">
+			<short>session بۇيرۇق تىزىملىكىدىن shutdown دېگەن تۈرىنى ئۆچۈرۈش</short>
+			<long>shutdown توپچىسىنى session بۇيرۇق تىزىملىكىدە كۆرسەتمەيدىغان قىلىش</long>
+		</locale>
+
+		<locale name="uk">
+			<short>Прибрати пункт «Вимкнути комп’ютер» з меню</short>
+			<long>Вимкнути показ кнопки «Вимкнути комп’ютер» в меню.</long>
+		</locale>
+
+		<locale name="vi">
+			<short>Gỡ mục Tắt máy khỏi trình đơn phiên làm việc</short>
+			<long>Làm cho nút Tắt máy không hiển thị trên trình đơn phiên làm việc</long>
+		</locale>
+
+		<locale name="zh_CN">
+			<short>移除会话菜单中的关机项</short>
+			<long>使关机按钮不在会话菜单中显示。</long>
+		</locale>
+
+		<locale name="zh_HK">
+			<short>從工作階段選單中移除「關機」項目</short>
+			<long>讓關機按鈕不要顯示在作業階段選單內。</long>
+		</locale>
+
+		<locale name="zh_TW">
+			<short>從工作階段選單中移除「關機」項目</short>
+			<long>讓關機按鈕不要顯示在作業階段選單內。</long>
+		</locale>
+	</schema>
+  </schemalist>
+</gconfschemafile>

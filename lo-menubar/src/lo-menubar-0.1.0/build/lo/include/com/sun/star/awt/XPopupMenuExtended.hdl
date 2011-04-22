@@ -1,0 +1,54 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_XPOPUPMENUEXTENDED_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_XPOPUPMENUEXTENDED_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/awt/KeyEvent.hdl"
+#include "com/sun/star/uno/RuntimeException.hdl"
+#include "com/sun/star/awt/XMenuExtended2.hdl"
+#include "com/sun/star/container/NoSuchElementException.hdl"
+#include "com/sun/star/awt/MenuLogo.hdl"
+#include "com/sun/star/awt/XPopupMenu.hdl"
+namespace com { namespace sun { namespace star { namespace graphic { class XGraphic; } } } }
+#include "com/sun/star/uno/Reference.h"
+#include "cppu/macros.hxx"
+#include "rtl/ustring.hxx"
+#include "sal/types.h"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+class SAL_NO_VTABLE XPopupMenuExtended : public ::com::sun::star::awt::XPopupMenu, public ::com::sun::star::awt::XMenuExtended2
+{
+public:
+
+    // Methods
+    virtual ::sal_Bool SAL_CALL isInExecute(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL endExecute(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setLogo( const ::com::sun::star::awt::MenuLogo& aMenuLogo ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::awt::MenuLogo SAL_CALL getLogo(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL enableAutoMnemonics( ::sal_Bool bEnable ) throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setAcceleratorKeyEvent( ::sal_Int16 nItemId, const ::com::sun::star::awt::KeyEvent& aKeyEvent ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::awt::KeyEvent SAL_CALL getAcceleratorKeyEvent( ::sal_Int16 nItemId ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setHelpText( ::sal_Int16 nItemId, const ::rtl::OUString& sHelpText ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::rtl::OUString SAL_CALL getHelpText( ::sal_Int16 nItemId ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setTipHelpText( ::sal_Int16 nItemId, const ::rtl::OUString& sTipHelpText ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::rtl::OUString SAL_CALL getTipHelpText( ::sal_Int16 nItemId ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setItemImage( ::sal_Int16 nItemId, const ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic >& xGraphic, ::sal_Bool bScale ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic > SAL_CALL getItemImage( ::sal_Int16 nItemId ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setItemImageAngle( ::sal_Int16 nItemId, ::sal_Int32 nAngle ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Int32 SAL_CALL getItemImageAngle( ::sal_Int16 nItemId ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual void SAL_CALL setItemImageMirrorMode( ::sal_Int16 nItemId, ::sal_Bool bMirror ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::sal_Bool SAL_CALL isItemImageInMirrorMode( ::sal_Int16 nItemId ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException) = 0;
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPopupMenuExtended >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_XPOPUPMENUEXTENDED_HDL

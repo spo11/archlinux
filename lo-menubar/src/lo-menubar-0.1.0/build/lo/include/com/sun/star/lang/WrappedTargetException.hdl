@@ -1,0 +1,36 @@
+#ifndef INCLUDED_COM_SUN_STAR_LANG_WRAPPEDTARGETEXCEPTION_HDL
+#define INCLUDED_COM_SUN_STAR_LANG_WRAPPEDTARGETEXCEPTION_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/Exception.hdl"
+#include "com/sun/star/uno/Any.h"
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace lang {
+
+class CPPU_GCC_DLLPUBLIC_EXPORT WrappedTargetException : public ::com::sun::star::uno::Exception
+{
+public:
+    inline CPPU_GCC_DLLPRIVATE WrappedTargetException() SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE WrappedTargetException(const ::rtl::OUString& Message_, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Context_, const ::com::sun::star::uno::Any& TargetException_) SAL_THROW( () );
+
+    inline CPPU_GCC_DLLPRIVATE WrappedTargetException(WrappedTargetException const &);
+
+    inline CPPU_GCC_DLLPRIVATE ~WrappedTargetException();
+
+    inline CPPU_GCC_DLLPRIVATE WrappedTargetException & operator =(WrappedTargetException const &);
+
+    ::com::sun::star::uno::Any TargetException CPPU_GCC3_ALIGN( ::com::sun::star::uno::Exception );
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::lang::WrappedTargetException* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_LANG_WRAPPEDTARGETEXCEPTION_HDL

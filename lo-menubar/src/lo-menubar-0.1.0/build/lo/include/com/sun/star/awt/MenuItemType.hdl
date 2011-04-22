@@ -1,0 +1,28 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_MENUITEMTYPE_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_MENUITEMTYPE_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+enum MenuItemType
+{
+    MenuItemType_DONTKNOW = 0,
+    MenuItemType_STRING = 1,
+    MenuItemType_IMAGE = 2,
+    MenuItemType_STRINGIMAGE = 3,
+    MenuItemType_SEPARATOR = 4,
+    MenuItemType_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::awt::MenuItemType* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_MENUITEMTYPE_HDL

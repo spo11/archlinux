@@ -1,0 +1,27 @@
+#ifndef INCLUDED_COM_SUN_STAR_TABLE_CELLCONTENTTYPE_HDL
+#define INCLUDED_COM_SUN_STAR_TABLE_CELLCONTENTTYPE_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace table {
+
+enum CellContentType
+{
+    CellContentType_EMPTY = 0,
+    CellContentType_VALUE = 1,
+    CellContentType_TEXT = 2,
+    CellContentType_FORMULA = 3,
+    CellContentType_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::table::CellContentType* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_TABLE_CELLCONTENTTYPE_HDL

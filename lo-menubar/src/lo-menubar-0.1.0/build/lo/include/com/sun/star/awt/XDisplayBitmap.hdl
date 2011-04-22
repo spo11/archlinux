@@ -1,0 +1,27 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_XDISPLAYBITMAP_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_XDISPLAYBITMAP_HDL
+
+#include "sal/config.h"
+
+#include "com/sun/star/uno/XInterface.hdl"
+#include "com/sun/star/uno/Reference.h"
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+class SAL_NO_VTABLE XDisplayBitmap : public ::com::sun::star::uno::XInterface
+{
+public:
+
+    static inline ::com::sun::star::uno::Type const & SAL_CALL static_type(void * = 0);
+};
+
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XDisplayBitmap >* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_XDISPLAYBITMAP_HDL

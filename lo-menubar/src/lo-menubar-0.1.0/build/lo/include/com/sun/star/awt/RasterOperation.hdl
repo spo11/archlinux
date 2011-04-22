@@ -1,0 +1,28 @@
+#ifndef INCLUDED_COM_SUN_STAR_AWT_RASTEROPERATION_HDL
+#define INCLUDED_COM_SUN_STAR_AWT_RASTEROPERATION_HDL
+
+#include "sal/config.h"
+
+#include "cppu/macros.hxx"
+
+namespace com { namespace sun { namespace star { namespace awt {
+
+enum RasterOperation
+{
+    RasterOperation_OVERPAINT = 0,
+    RasterOperation_XOR = 1,
+    RasterOperation_ZEROBITS = 2,
+    RasterOperation_ALLBITS = 3,
+    RasterOperation_INVERT = 4,
+    RasterOperation_MAKE_FIXED_SIZE = SAL_MAX_ENUM
+};
+
+} } } }
+
+namespace com { namespace sun { namespace star { namespace uno {
+class Type;
+} } } }
+
+inline const ::com::sun::star::uno::Type& SAL_CALL getCppuType( const ::com::sun::star::awt::RasterOperation* ) SAL_THROW( () );
+
+#endif // INCLUDED_COM_SUN_STAR_AWT_RASTEROPERATION_HDL
