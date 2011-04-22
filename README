@@ -1,3 +1,7 @@
+# What is this?
+This repository was created so that outdated PKGBUILDs in the AUR could have a more updated version. 
+
+# Contents
 indicator-applet
 indicator-appmenu
 indicator-messages
